@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Animate on scroll library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -58,15 +60,15 @@
       <!-- Skills -->
       <h2 class="title" id="skills">Skills</h2>
       <div class="skills">
-        <div class="skills_react">
+        <div class="skills_react" data-aos="fade-up">
           <i class="devicon-react-original"></i>
           <h3>React-Js</h3>
         </div>
-        <div class="skills_javascript">
+        <div class="skills_javascript" data-aos="fade-up">
           <i class="devicon-javascript-plain"></i>
           <h3>JavaScript</h3>
         </div>
-        <div class="skills_python">
+        <div class="skills_python" data-aos="fade-up">
           <i class="devicon-python-plain"></i>
           <h3>Python</h3>
         </div>
@@ -80,12 +82,8 @@
         <div class="project_1">
           <div class="project_1_content">
             <h3>#1 Tinder-frontend-Clone</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
-              aspernatur tempore error quibusdam cum officia facilis soluta
-              magnam eligendi alias?
-            </p>
-            <img src="img/tinder.PNG" alt="" />
+            <p>This project was made using react, basically</p>
+            <img src="img/tinder.PNG" alt="" data-aos="fade-right" />
           </div>
         </div>
         <div class="project_2">
@@ -96,7 +94,7 @@
               aspernatur tempore error quibusdam cum officia facilis soluta
               magnam eligendi alias?
             </p>
-            <img src="img/weather.PNG" alt="" />
+            <img src="img/weather.PNG" alt="" data-aos="fade-left" />
           </div>
         </div>
       </div>
@@ -127,5 +125,9 @@
     <!-- container ends -->
 
     <script src="app.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
