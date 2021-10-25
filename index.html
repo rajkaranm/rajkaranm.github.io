@@ -39,20 +39,21 @@
         <ul>
           <li><a href="#home">Home</a></li>
           <li><a href="#skills">Skills</a></li>
-          <li><a href="#project">project</a></li>
-          <li><a href="#contact">contact</a></li>
+          <li><a href="#project">Project</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
 
       <!-- Home -->
       <div id="home" class="home">
+        <img src="img/working.svg" alt="" />
         <div>
           <h2>I'm Rajkaran</h2>
+          <p>
+            I'm currently studing computer <br />Engineering, I love debugging
+            codes.
+          </p>
         </div>
-        <p>
-          Hi, I'm currently studing computer <br />Engineering, I really love
-          debugging codes.
-        </p>
       </div>
       <!-- Home ends -->
       <hr />
@@ -60,16 +61,19 @@
       <!-- Skills -->
       <h2 class="title" id="skills">Skills</h2>
       <div class="skills">
-        <div class="skills_react" data-aos="fade-up">
-          <i class="devicon-react-original"></i>
+        <div class="skills_box" data-aos="fade-up">
+          <i class="devicon-react-original colored"></i>
           <h3>React-Js</h3>
         </div>
-        <div class="skills_javascript" data-aos="fade-up">
-          <i class="devicon-javascript-plain"></i>
+        <div class="skills_box" data-aos="fade-up">
+          <i class="devicon-javascript-plain colored"></i>
           <h3>JavaScript</h3>
         </div>
-        <div class="skills_python" data-aos="fade-up">
-          <i class="devicon-python-plain"></i>
+        <div class="skills_box" data-aos="fade-up">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+          />
+
           <h3>Python</h3>
         </div>
       </div>
@@ -79,22 +83,32 @@
       <!-- projects -->
       <h2 class="title" id="project">projects</h2>
       <div class="project">
-        <div class="project_1">
-          <div class="project_1_content">
-            <h3>#1 Tinder-frontend-Clone</h3>
-            <p>This project was made using react, basically</p>
-            <img src="img/tinder.PNG" alt="" data-aos="fade-right" />
+        <div class="project_1" data-aos="fade-right">
+          <div class="project_content">
+            <img src="img/tinder.PNG" alt="" />
+            <div class="project_details">
+              <h3>#1 Tinder-frontend-Clone</h3>
+              <p>
+                This project was made using react, It has swipe out image
+                feature like tinder, MongoDB was used to fetch user's data.
+              </p>
+              <button>Preview</button>
+            </div>
           </div>
         </div>
-        <div class="project_2">
-          <div class="project_2_content">
-            <h3>#2 Dynamic weather app</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
-              aspernatur tempore error quibusdam cum officia facilis soluta
-              magnam eligendi alias?
-            </p>
-            <img src="img/weather.PNG" alt="" data-aos="fade-left" />
+        <hr />
+        <div class="project_2" data-aos="fade-left">
+          <div class="project_content">
+            <img src="img/weather.PNG" alt="" />
+            <div class="project_details">
+              <h3>#2 Dynamic weather app</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Explicabo aspernatur tempore error quibusdam cum officia facilis
+                soluta magnam eligendi alias?
+              </p>
+              <button>Preview</button>
+            </div>
           </div>
         </div>
       </div>
@@ -113,9 +127,7 @@
             href="https://www.linkedin.com/in/raj-karan-2127a0221/"
             target="_blank"
           >
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg"
-            />
+            <i class="devicon-linkedin-plain colored"></i>
           </a>
         </div>
       </div>
