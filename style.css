@@ -123,13 +123,13 @@ nav h3 {
   width: 7.7rem;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   .skills {
     height: 80vh;
   }
 
   .skills_box {
-    margin: 0 3rem;
+    margin: 0 6rem;
   }
 }
 
