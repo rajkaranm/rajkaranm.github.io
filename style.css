@@ -33,7 +33,7 @@ nav {
   position: fixed;
   justify-content: space-around;
   align-items: center;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   background-color: #000000;
   color: white;
   box-shadow: 0px 0px 10px 0px black;
@@ -168,6 +168,10 @@ nav h3 {
   font-family: "Zen Kurenaido", sans-serif;
 }
 
+.project h3 {
+  font-size: 1.9rem;
+}
+
 #project_2_content {
   flex-direction: row-reverse;
 }
@@ -176,7 +180,7 @@ nav h3 {
   background-color: #3873f1; /* Green */
   border: none;
   color: white;
-  padding: 15px 32px;
+  padding: 8px 25px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -215,6 +219,9 @@ nav h3 {
 }
 
 .contact p {
+  font-size: 1.3rem;
+  letter-spacing: -1px;
+  word-spacing: -3px;
   margin: 1rem auto;
 }
 
