@@ -130,11 +130,11 @@ nav h3 {
 
 @media only screen and (max-width: 800px) {
   .skills {
-    height: 80vh;
+    height: auto;
   }
 
   .skills_box {
-    margin: 0 6rem;
+    margin: 3rem;
   }
 }
 
@@ -191,6 +191,11 @@ nav h3 {
   display: inline-block;
   font-size: 16px;
   border-radius: 1.5rem;
+}
+
+.project_content button a{
+  text-decoration: none;
+  color: white;
 }
 
 .project_details {

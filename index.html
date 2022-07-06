@@ -1,141 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Animate on scroll library -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Fira+Code&family=Roboto:wght@300&family=Zen+Kurenaido&display=swap"
-      rel="stylesheet"
-    />
 
-    <!-- Dev Icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Animate on scroll library -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Fira+Code&family=Roboto:wght@300&family=Zen+Kurenaido&display=swap"
+    rel="stylesheet" />
 
-    <!-- external stylesheet -->
-    <link rel="stylesheet" href="style.css" />
-    <title>Portfolio - Rajkaran</title>
-  </head>
-  <body>
-    <!-- wehsite structure
+  <!-- Dev Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css" />
+
+  <!-- external stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+  <title>Portfolio - Rajkaran</title>
+</head>
+
+<body>
+  <!-- wehsite structure
     Navbar  
     Home
     skills
     projects
     contact -->
 
-    <div class="container">
-      <nav>
-        <h3>Porfolio.</h3>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#project">Project</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+  <div class="container">
+    <nav>
+      <h3>Porfolio.</h3>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#project">Project</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
 
-      <!-- Home -->
-      <div id="home" class="home">
-        <img src="img/working.svg" alt="" />
-        <div>
-          <h1>I'm Rajkaran</h1>
-          <p>
-            I'm currently studing as computer <br />Engineering, I love
-            debugging codes.
-          </p>
-        </div>
+    <!-- Home -->
+    <div id="home" class="home">
+      <img src="img/working.svg" alt="" />
+      <div>
+        <h1>I'm Rajkaran</h1>
+        <p>
+          I'm currently studing as computer <br />Engineering, I love to learn new techology.
+        </p>
       </div>
-      <!-- Home ends -->
-      <hr id="skills" />
-
-      <!-- Skills -->
-      <h2 class="title">Skills</h2>
-      <div class="skills">
-        <div class="skills_box" data-aos="fade-up">
-          <i class="devicon-react-original colored"></i>
-          <h3>React-Js</h3>
-        </div>
-        <div class="skills_box" data-aos="fade-up">
-          <i class="devicon-javascript-plain colored"></i>
-          <h3>JavaScript</h3>
-        </div>
-        <div class="skills_box" data-aos="fade-up">
-          <img
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
-          />
-
-          <h3>Python</h3>
-        </div>
-      </div>
-      <!-- skill endss -->
-      <hr id="project" />
-
-      <!-- projects -->
-      <h2 class="title">Projects</h2>
-      <div class="project">
-        <div class="project_1" data-aos="fade-right">
-          <div class="project_content">
-            <img src="img/tinder.PNG" alt="" />
-            <div class="project_details">
-              <h3>#1 Tinder-frontend-Clone</h3>
-              <p>
-                This project was made using react, It has swipe out image
-                feature like tinder, MongoDB was used to fetch user's data.
-              </p>
-              <button>Preview</button>
-            </div>
-          </div>
-        </div>
-        <hr />
-        <div class="project_2" data-aos="fade-left">
-          <div id="project_2_content" class="project_content">
-            <img src="img/weather.PNG" alt="" />
-            <div class="project_details">
-              <h3>#2 Dynamic weather app</h3>
-              <p>
-                OpenWeather API was used to fetch data, User can create as much
-                card as they want and watch data of a particular city in
-                individual cards.
-              </p>
-              <button>Preview</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <hr id="contact" />
-      <!-- Project ends -->
-
-      <!-- Contact -->
-      <h2 class="title">Contact</h2>
-      <div class="contact">
-        <p>Get in touch with me</p>
-        <div class="contacts">
-          <a href="https://github.com/Rajkaranm/portfolio" target="_blank">
-            <i class="devicon-github-original-wordmark colored"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/raj-karan" target="_blank">
-            <i class="devicon-linkedin-plain colored"></i>
-          </a>
-        </div>
-      </div>
-      <!-- contact ends -->
-      <h2 class="title">Thanks for visiting.</h2>
     </div>
-    <!-- container ends -->
+    <!-- Home ends -->
+    <hr id="skills" />
 
-    <script src="app.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-  </body>
+    <!-- Skills -->
+    <h2 class="title">Skills</h2>
+    <div class="skills">
+      <div class="skills_box" data-aos="fade-up">
+        <i class="devicon-react-original colored"></i>
+        <h3>React-Js</h3>
+      </div>
+      <div class="skills_box" data-aos="fade-up">
+        <i class="devicon-javascript-plain colored"></i>
+        <h3>JavaScript</h3>
+      </div>
+      <div class="skills_box" data-aos="fade-up">
+        <i class="devicon-django-plain-wordmark colored"></i>
+        <h3>Django</h3>
+      </div>
+      <div class="skills_box" data-aos="fade-up">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />
+
+        <h3>Python</h3>
+      </div>
+    </div>
+    <!-- skill endss -->
+    <hr id="project" />
+
+    <!-- projects -->
+    <h2 class="title">Projects</h2>
+
+    <div class="project">
+
+      <div class="project_1" data-aos="fade-right">
+        <div class="project_content">
+          <img src="img/password.jpg" alt="" />
+          <div class="project_details">
+            <h3>#1 Password Manager in Python</h3>
+            <p>
+              A minimal password manager made with python and postgreSQL.
+              It uses Cryptography to Encrypt the password to store in database.
+            </p>
+            <button> <a href="https://github.com/Rajkaranm/password_manager">Github</a> </button>
+          </div>
+        </div>
+      </div>
+      <div class="project_2" data-aos="fade-left">
+        <div id="project_2_content" class="project_content">
+          <img src="img/spacehub.jpg" alt="" />
+          <div class="project_details">
+            <h3>#2 Spacehub</h3>
+            <p>
+              Spacehub is for space enthusiat, it provide various information about spacehub
+              through APIs like (NASA's Astronomy picture of the day)
+            </p>
+            <button> <a href="https://github.com/Rajkaranm/spacehub">Github</a> </button>
+          </div>
+        </div>
+      </div>
+      <div class="project_1" data-aos="fade-right">
+        <div class="project_content">
+          <img src="img/tinder.PNG" alt="" />
+          <div class="project_details">
+            <h3>#3 Tinder-frontend-Clone</h3>
+            <p>
+              This project was made using react, It has swipe out image
+              feature like tinder, MongoDB was used to fetch user's data.
+            </p>
+            <button> <a href="https://github.com/Rajkaranm/tinder-frontend-clone">Github</a> </button>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="project_2" data-aos="fade-left">
+        <div id="project_2_content" class="project_content">
+          <img src="img/weather.PNG" alt="" />
+          <div class="project_details">
+            <h3>#4 Dynamic weather app</h3>
+            <p>
+              OpenWeather API was used to fetch data, User can create as much
+              card as they want and watch data of a particular city in
+              individual cards.
+            </p>
+            <button> <a href="https://github.com/Rajkaranm/react-weather-app">Github</a> </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr id="contact" />
+    <!-- Project ends -->
+
+    <!-- Contact -->
+    <h2 class="title">Contact</h2>
+    <div class="contact">
+      <p>Get in touch with me</p>
+      <div class="contacts">
+        <a href="https://github.com/Rajkaranm/" target="_blank">
+          <i class="devicon-github-original-wordmark colored"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/raj-karan" target="_blank">
+          <i class="devicon-linkedin-plain colored"></i>
+        </a>
+      </div>
+    </div>
+    <!-- contact ends -->
+    <h2 class="title">Thanks for visiting.</h2>
+  </div>
+  <!-- container ends -->
+
+  <script src="app.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
 </html>
