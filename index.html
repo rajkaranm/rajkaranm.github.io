@@ -1,170 +1,294 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/img/logo.ico" />
+    <!-- Animate on scroll library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Fira+Code&family=Roboto:wght@300&family=Zen+Kurenaido&display=swap"
+      rel="stylesheet"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- Animate on scroll library -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Fira+Code&family=Roboto:wght@300&family=Zen+Kurenaido&display=swap"
-    rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
 
-  <!-- Dev Icons -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css" />
+    <!-- external stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Portfolio - Rajkaran</title>
+  </head>
 
-  <!-- external stylesheet -->
-  <link rel="stylesheet" href="style.css" />
-  <title>Portfolio - Rajkaran</title>
-</head>
+  <body>
+    <div class="container">
+      <div class="left">
+        <div class="data">
+          <h3>Rajkaran Mishra</h3>
+          <h4 id="intro">Software Engineer and Aspiring Data Scientist.</h4>
+          <p>
+            I build high performance full stack application and Delivering applications that enhance user experience and drive business growth.
+.
+          </p>
 
-<body>
-  <!-- wehsite structure
-    Navbar  
-    Home
-    skills
-    projects
-    contact -->
-
-  <div class="container">
-    <nav>
-      <h3>Porfolio.</h3>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#project">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="/blog">Blog</a></li>
-      </ul>
-    </nav>
-
-    <!-- Home -->
-    <div id="home" class="home">
-      <img src="img/working.svg" alt="" />
-      <div>
-        <h1>Hi, I'm Rajkaran</h1>
-        <p>
-          I'm a programmer and full stack web developer,<br> Engineering, I love to learn new techology.
-        </p>
-      </div>
-    </div>
-    <!-- Home ends -->
-    <hr id="skills" />
-
-    <!-- Skills -->
-    <h2 class="title">Skills</h2>
-    <div class="skills">
-      <div class="skills_box" data-aos="fade-up">
-        <i class="devicon-react-original colored"></i>
-        <h3>React-Js</h3>
-      </div>
-      <div class="skills_box" data-aos="fade-up">
-        <i class="devicon-javascript-plain colored"></i>
-        <h3>JavaScript</h3>
-      </div>
-      <div class="skills_box" data-aos="fade-up">
-        <i class="devicon-django-plain-wordmark colored"></i>
-        <h3>Django</h3>
-      </div>
-      <div class="skills_box" data-aos="fade-up">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />
-
-        <h3>Python</h3>
-      </div>
-    </div>
-    <!-- skill endss -->
-    <hr id="project" />
-
-    <!-- projects -->
-    <h2 class="title">Projects</h2>
-
-    <div class="project">
-
-      <div class="project_1" data-aos="fade-right">
-        <div class="project_content">
-          <img src="img/password.jpg" alt="" />
-          <div class="project_details">
-            <h3>#1 Password Manager in Python</h3>
-            <p>
-              A minimal password manager made with python and postgreSQL.
-              It uses Cryptography to Encrypt the password to store in database.
-            </p>
-            <button> <a href="https://github.com/Rajkaranm/password_manager">Github</a> </button>
+          <div class="nav_link">
+            <h4 class="left_heading">Navigate</h4>
+            <hr />
+            <ul>
+              <li class="nav_item"><span></span> <a href="#about">About</a></li>
+              <li class="nav_item">
+                <span></span> <a href="#experience">Experience</a>
+              </li>
+              <li class="nav_item">
+                <span></span> <a href="#expertise">Expertise</a>
+              </li>
+              <li class="nav_item">
+                <span></span> <a href="#projects">Projects</a>
+              </li>
+              <li class="nav_item"><span></span> <a href="/blog">Blog</a></li>
+            </ul>
           </div>
+
+          <h4 class="left_heading">Connect</h4>
+          <hr />
+          <ul class="social_media">
+            <li>
+              <i class="fab fa-medium" style="width: 20px"></i>
+              <a href="https://rajkaran359.medium.com" target="_blank"
+                >Medium</a
+              >
+            </li>
+            <li>
+              <i class="fab fa-linkedin" style="color: blue; width: 20px"></i>
+              <a href="https://www.linkedin.com/in/raj-karan/" target="_blank"
+                >Linkedin</a
+              >
+            </li>
+            <li>
+              <i class="fab fa-github" style="color: black; width: 20px"></i>
+              <a href="https://github.com/" target="_blank">Linkedin</a>
+            </li>
+          </ul>
         </div>
       </div>
-      <div class="project_2" data-aos="fade-left">
-        <div id="project_2_content" class="project_content">
-          <img src="img/spacehub.jpg" alt="" />
-          <div class="project_details">
-            <h3>#2 Spacehub</h3>
+
+      <div class="right">
+        <!-- about -->
+        <div id="about" class="about">
+          <div>
+            <h1>About</h1>
             <p>
-              Spacehub is for space enthusiat, it provide various information about spacehub
-              through APIs like (NASA's Astronomy picture of the day)
+              I by mistakenly discovered programming and fell in love with them,
+              Whole lockdown I spend programming and exploring many things which
+              made me a jack of all trade. <br />
+              <br />
+              For now highly skilled in <b>Full stack development</b> and
+              <b>DevOps</b>. I can develop high performance application and
+              deploy it on cloud services like <b>AWS</b>. <br />
+              <br />
+              Futher I am developing skill in Data Science as this field has the
+              potential to create big impact on future.
             </p>
-            <button> <a href="https://github.com/Rajkaranm/spacehub">Github</a> </button>
           </div>
         </div>
-      </div>
-      <div class="project_1" data-aos="fade-right">
-        <div class="project_content">
-          <img src="img/tinder.PNG" alt="" />
-          <div class="project_details">
-            <h3>#3 Tinder-frontend-Clone</h3>
-            <p>
-              This project was made using react, It has swipe out image
-              feature like tinder, MongoDB was used to fetch user's data.
+        <!-- Home ends -->
+
+        <!-- Experience  -->
+        <div id="experience">
+          <h1 class="title">Experience</h1>
+          <div class="experience_box" data-aos="fade-up">
+            <p id="duration">
+              July - September <br />
+              2022
             </p>
-            <button> <a href="https://github.com/Rajkaranm/tinder-frontend-clone">Github</a> </button>
+            <div class="experience_details">
+              <h3>Papersdrop</h3>
+              <p>React Developer.</p>
+              <p>
+                Improved their UI by developing reusable components in React.
+                Developed and contributed to the successful improvement of the
+                software. Communicated with Backend developers to solve bugs and
+                issues.
+              </p>
+
+              <div class="tag_container">
+                <span class="tag">#React</span>
+                <span class="tag">#NextJs</span>
+                <span class="tag">#Git</span>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <hr />
-      <div class="project_2" data-aos="fade-left">
-        <div id="project_2_content" class="project_content">
-          <img src="img/weather.PNG" alt="" />
-          <div class="project_details">
-            <h3>#4 Dynamic weather app</h3>
-            <p>
-              OpenWeather API was used to fetch data, User can create as much
-              card as they want and watch data of a particular city in
-              individual cards.
+
+        <!-- Experience Ends -->
+
+        <!-- Expertise -->
+        <div id="expertise" class="expertise">
+          <h1 class="title">Expertise</h1>
+          <div class="expertise_box" data-aos="fade-up">
+            <h3>Full Stack Development</h3>
+            <p>I have been working many full stack projects where I have create many micro services and APIs. I have good experience in creating high performing Full Stack projects.
             </p>
-            <button> <a href="https://github.com/Rajkaranm/react-weather-app">Github</a> </button>
+            <div class="tag_container">
+              <span class="tag">#React</span>
+              <span class="tag">#MongoDB</span>
+              <span class="tag">#NodeJs</span>
+              <span class="tag">#Expree</span>
+              <span class="tag">#NextJs</span>
+              <span class="tag">#Django</span>
+              <span class="tag">#Flask</span>
+            </div>
+          </div>
+          <div class="expertise_box" data-aos="fade-up">
+            <h3>DevOps</h3>
+            <p>
+              I have worked on projects and deployed it on AWS and Google cloud using docker, kubernetes, Jenkins and Terraform.
+            </p>
+            <div class="tag_container">
+              <span class="tag">#AWS</span>
+              <span class="tag">#Docker</span>
+              <span class="tag">#Kubernetes</span>
+              <span class="tag">#Gcloud</span>
+              <span class="tag">#Jenkins</span>
+              <span class="tag">#Terraform</span>
+            </div>
+          </div>
+          <div class="expertise_box" data-aos="fade-up">
+            <h3>Data Science</h3>
+            <p>
+              I have been a aspiring Data scientist, currently working on projects related to data science.
+            </p>
+            <div class="tag_container">
+              <span class="tag">#Python</span>
+              <span class="tag">#Numpy</span>
+              <span class="tag">#Pandas</span>
+              <span class="tag">#Matplotlib</span>
+              <span class="tag">#Scikit-learn</span>
+              <span class="tag">#TensorFlow</span>
+              <span class="tag">#Power BI</span>
+            </div>
           </div>
         </div>
+        <!-- Expertise ends -->
+
+        <!-- projects -->
+
+        <div id="projects" class="project">
+          <h1 class="title">Projects</h1>
+          <div class="project_box" data-aos="fade-up">
+            <img src="img/spacehub.jpg" alt="" />
+            <div class="project_details">
+              <h3>#1 Spacehub</h3>
+              <h4>Spacehub is for space enthusiat</h4>
+              <p>
+                It provide various information about space through
+                <b>APIs</b> like NASA's Astronomy picture of the day and Various
+                Other APIs. It is purely build with <b>Django</b>
+              </p>
+              <button>
+                <a href="https://github.com/Rajkaranm/spacehub" target="_blank"
+                  >Github</a
+                >
+              </button>
+            </div>
+          </div>
+          <div class="project_box" data-aos="fade-up">
+            <img
+              src="https://raw.githubusercontent.com/rajkaranm/scrpyard/main/img/scrpyard.png"
+              alt=""
+            />
+            <div class="project_details">
+              <h3>#2 Scrpyard</h3>
+              <h4>Scrpyard is a E-Commerce Website to sell and buy product.</h4>
+              <p>
+                Scrpyard has feature to <b>share</b> your project and
+                <b>buy</b> products others, It has <b>Cart feature</b>, It is
+                also integrated with <b>Razorpay's</b> payment gateway. Scrpyard
+                was build with <b>MERN Stack</b>.
+              </p>
+              <button>
+                <a
+                  href="https://github.com/rajkaranm/scrpyard"
+                  target="_blank"
+                  >Github</a
+                >
+              </button>
+            </div>
+          </div>
+          <div class="project_box" data-aos="fade-up">
+            <img
+              src="https://raw.githubusercontent.com/rajkaranm/crypton/main/img/crypton.png"
+              alt=""
+            />
+            <div class="project_details">
+              <h3>#3 Crypton</h3>
+              <h4>Crypton is Blockchain Based Application.</h4>
+              <p>
+                It is integrated with <b>Meta Mask</b>. User can transfer eth on to another user in <b>Etherium</b>
+                blockchain. User is provided with Tools page where user can view <b>live price</b> and <b>live graph</b> of the price of the coin.
+              </p>
+              <button>
+                <a
+                  href="https://github.com/rajkaranm/crypton"
+                  target="_blank"
+                  >Github</a
+                >
+              </button>
+            </div>
+          </div>
+          <div class="project_box" data-aos="fade-up">
+            <img
+              src="https://raw.githubusercontent.com/rajkaranm/cloud_resources_monitoring/Main/img/cloud_monitoring.png"
+              alt=""
+            />
+            <div class="project_details">
+              <h3>#4 Cloud Resources Monitoring</h3>
+              <h4>It's DevOps project to monitor resources of cloud server.</h4>
+              <p>
+                Its app build with <b>flask</b> and output the resources of the cloud server. Using <b>docker</b> and <b>kubernetes</b> it is deployed on AWS. 
+              </p>
+              <button>
+                <a
+                  href="https://github.com/rajkaranm/cloud_resources_monitoring"
+                  target="_blank"
+                  >Github</a
+                >
+              </button>
+            </div>
+          </div>
+          <div class="project_box" data-aos="fade-up">
+            <img
+              src="https://raw.githubusercontent.com/rajkaranm/tinder-frontend-clone/master/projectImg.PNG"
+              alt=""
+            />
+            <div class="project_details">
+              <h3>#5 Tinder-frontend-Clone</h3>
+              <p>
+                This project was made using react, It has swipe out image
+                feature like tinder, MongoDB was used to fetch data.
+              </p>
+              <button>
+                <a
+                  href="https://github.com/Rajkaranm/tinder-frontend-clone"
+                  target="_blank"
+                  >Github</a
+                >
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Project ends -->
+        <h2 class="title">Thanks For Visiting</h2>
       </div>
     </div>
-    <hr id="contact" />
-    <!-- Project ends -->
+    <!-- container ends -->
 
-    <!-- Contact -->
-    <h2 class="title">Contact</h2>
-    <div class="contact">
-      <p>Get in touch with me</p>
-      <div class="contacts">
-        <a href="https://github.com/Rajkaranm/" target="_blank">
-          <i class="devicon-github-original-wordmark colored"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/raj-karan" target="_blank">
-          <i class="devicon-linkedin-plain colored"></i>
-        </a>
-      </div>
-    </div>
-    <!-- contact ends -->
-    <h2 class="title">Thanks for visiting.</h2>
-  </div>
-  <!-- container ends -->
-
-  <script src="app.js"></script>
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
-</body>
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="app.js"></script>
+  </body>
 </html>
