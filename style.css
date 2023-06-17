@@ -226,13 +226,15 @@
   }
 
   .left {
-    width: 89vw;
-    margin: 3rem 2rem;
+    width: 100vw;
+    margin: 0;
     position: static;
   }
 
   .right {
     width: 100vw;
+    margin: 20rem 0rem;
+    padding: 0 1rem;
   }
 
   .project_box {
