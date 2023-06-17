@@ -228,12 +228,14 @@
   .left {
     width: 100vw;
     margin: 0;
+
+    margin-bottom: 16rem;
     position: static;
   }
 
   .right {
     width: 100vw;
-    margin: 20rem 0rem;
+    margin: 0rem;
     padding: 0 1rem;
   }
 
