@@ -7,229 +7,145 @@
     <link rel="icon" type="image/x-icon" href="/img/logo.ico" />
     <!-- Animate on scroll library -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Fira+Code&family=Roboto:wght@300&family=Zen+Kurenaido&display=swap"
-      rel="stylesheet"
-    />
 
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
 
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
     <!-- external stylesheet -->
-    <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
     <title>Portfolio - Rajkaran</title>
   </head>
 
   <body>
-    <div class="container">
-      <div class="left">
-        <div class="data">
-          <h3>Rajkaran Mishra</h3>
-          <h4 id="intro">Software Engineer and Penetrations Tester</h4>
-          <p>
-            I build high performance full stack application and Deliver
-            applications that enhance user experience and drive business growth.
-            .
+    <div class="w-full px-[16rem] bg-black text-white">
+      <div class="h-screen flex justify-between items-center mx-10">
+        <div>
+          <h3 class="text-[4rem] font-bold">Rajkaran M.</h3>
+          <p class="w-[20rem] opacity-50">
+            I build high performance full stack application and I hack
+            application to find weakness to resolve it. .
           </p>
-
-          <h4 class="left_heading">Connect</h4>
-          <hr />
-          <ul class="social_media">
-            <li>
-              <i class="fab fa-medium" style="width: 20px"></i>
-              <a href="https://rajkaran359.medium.com" target="_blank"
-                >Medium</a
-              >
-            </li>
-            <li>
-              <i class="fab fa-linkedin" style="color: blue; width: 20px"></i>
-              <a href="https://www.linkedin.com/in/raj-karan/" target="_blank"
-                >Linkedin</a
-              >
-            </li>
-            <li>
-              <i class="fab fa-github" style="color: black; width: 20px"></i>
-              <a href="https://github.com/rajkaranm" target="_blank">GitHub</a>
-            </li>
-            <li>
-              <i
-                class="fab fa-hackerrank"
-                style="color: black; width: 20px"
-              ></i>
-              <a
-                href="https://www.hackerrank.com/rajkaranvir456"
-                target="_blank"
-                >HackerRank</a
-              >
-            </li>
-          </ul>
         </div>
+        <img
+          class="w-[18rem] h-[18rem] rounded-full"
+          src="img/Profile.png"
+          alt=""
+        />
       </div>
 
-      <div class="right">
-        <!-- about -->
-        <div id="about" class="about">
+      <!-- Expertise -->
+      <div class="h-[30rem]">
+        <div class="flex flex-row justify-evenly my-10" data-aos="fade-up">
           <div>
-            <h1>About</h1>
-            <p>
-              I by mistakenly discovered programming in lockdown and fell in
-              love with it, Whole lockdown I spend programming and exploring
-              many areas of programming which made me a jack of all trade.
-              <br />
-              <br />
-              And For now, I'm actively learning to <b>Cybersecurity</b>, I'm
-              highly skilled in <b>Full stack development</b>. 
-              I can also work with <b>DevOps</b> tools.
-              I can develop high performance application and deploy it on cloud
-              services like <b>AWS</b> and <b>GCP</b>. <br />
-              <br />
-              Further I am developing skill in Ethical Hacking.
+            <h3 class="text-[3rem] text-blue-500 font-bold">Skills</h3>
+            <h1 class="w-[20rem] text-[2rem] font-bold">
+              Software Developer, DevOps & Ethical Hacker.
+            </h1>
+          </div>
+          <div>
+            <p class="w-[25rem] opacity-50">
+              I am skilled in developing application with MERN Stack and
+              frameworks like django, I also have good understanding of devOps
+              tools like docker and kubernetes. I can work with AWS and GCP. I
+              have also worked with NoSQL databases. Other than my developing
+              skills,I do bug bounty because, I like hacking web application to
+              find vulnerabilities and report to the developers. I'm Also a
+              developer so i know the mindset of a developer, I used that to
+              find bugs in the application.
             </p>
           </div>
         </div>
-        <!-- Home ends -->
+      </div>
 
+      <!-- Expertise ends -->
+
+      <div>
         <!-- Experience  -->
-        <div id="experience">
-          <h1 class="title">Experience</h1>
-          <div class="experience_box" data-aos="fade-up">
-            <p id="duration">
-              July - September <br />
-              2022
-            </p>
-            <div class="experience_details">
-              <h3>Papersdrop</h3>
-              <p>React Developer • Remote</p>
-              <p>
-                Improved their UI by developing reusable components in React.
-                Developed and contributed to the successful improvement of the
-                software. Communicated with Backend developers to solve bugs and
-                issues.
-              </p>
-
-              <div class="tag_container">
-                <span class="tag">#React</span>
-                <span class="tag">#NextJs</span>
-                <span class="tag">#Git</span>
-              </div>
+        <div class="h-96">
+          <h1 class="text-[3rem] text-blue-500 font-bold">Career</h1>
+          <div
+            class="my-10"
+            style="border-left: 1px solid lightblue; padding: 0 1rem"
+            data-aos="fade-up"
+          >
+            <h3 class="text-[2rem] font-bold">Papersdrop</h3>
+            <p class="text-xl">React Developer • Remote</p>
+            <p class="opacity-50">Jul 2022 - Sep 2022</p>
+            <div class="tag_container">
+              <span class="tag">#React</span>
+              <span class="tag">#NextJs</span>
+              <span class="tag">#Git</span>
             </div>
           </div>
         </div>
 
         <!-- Experience Ends -->
 
-        <!-- Expertise -->
-        <div id="expertise" class="expertise">
-          <h1 class="title">Expertise</h1>
-          <div class="expertise_box" data-aos="fade-up">
-            <h3>Full Stack Development</h3>
-            <p>
-              I have been working many full stack projects where I have create
-              many micro services and APIs. I have good experience in creating
-              high performing Full Stack projects.
-            </p>
-            <div class="tag_container">
-              <span class="tag">#React</span>
-              <span class="tag">#NextJs</span>
-              <span class="tag">#MongoDB</span>
-              <span class="tag">#NodeJs</span>
-              <span class="tag">#Express</span>
-              <span class="tag">#NextJs</span>
-              <span class="tag">#Django</span>
-              <span class="tag">#Flask</span>
-            </div>
-          </div>
-          <div class="expertise_box" data-aos="fade-up">
-            <h3>DevOps</h3>
-            <p>
-              I have worked on projects and deployed it on AWS and Google cloud
-              using docker, kubernetes, Jenkins and Terraform.
-            </p>
-            <div class="tag_container">
-              <span class="tag">#AWS</span>
-              <span class="tag">#Docker</span>
-              <span class="tag">#Kubernetes</span>
-              <span class="tag">#Gcloud</span>
-              <span class="tag">#Jenkins</span>
-              <span class="tag">#Terraform</span>
-            </div>
-          </div>
-          <div class="expertise_box" data-aos="fade-up">
-            <h3>Penetration Tester</h3>
-            <p>
-              I like hacking machines and playing CTFs
-            </p>
-            <div class="tag_container">
-              <span class="tag">#Networking</span>
-              <span class="tag">#Recon</span>
-              <span class="tag">#Pentest</span>
-              <span class="tag">#VAPT</span>
-            </div>
-          </div>
-        </div>
-        <!-- Expertise ends -->
-
         <!-- projects -->
 
-        <div id="projects" class="project">
-          <h1 class="title">Projects</h1>
-          <div class="project_box" data-aos="fade-up">
-            <img src="img/spacehub.jpg" alt="" />
-            <div class="project_details">
-              <h3>#1 Spacehub</h3>
-              <h4>Spacehub is for space enthusiat</h4>
-              <p>
+        <div>
+          <h1 class="text-[3rem] text-blue-500 font-bold">Projects</h1>
+
+          <div
+            class="w-full flex my-28 justify-evenly items-center"
+            data-aos="fade-up"
+          >
+            <img class="w-[30rem] h-[19rem]" src="img/spacehub.jpg" alt="" />
+            <div class="w-[20rem]">
+              <h3 class="text-[2rem] font-bold">#1 Spacehub</h3>
+              <p class="opacity-50">
                 It provide various information about space through
                 <b>APIs</b> like NASA's Astronomy picture of the day and Various
                 Other APIs. It is purely build with <b>Django</b>
               </p>
-              <button>
+              <button style="border-bottom: 1px solid lightblue">
                 <a href="https://github.com/Rajkaranm/spacehub" target="_blank"
                   >Github</a
                 >
               </button>
             </div>
           </div>
-          <div class="project_box" data-aos="fade-up">
-            <img
-              src="img/scrpyard.png"
-              alt=""
-            />
-            <div class="project_details">
-              <h3>#2 Scrpyard</h3>
-              <h4>Scrpyard is a E-Commerce Website to sell and buy product.</h4>
-              <p>
+          <div
+            class="w-full my-28 flex flex-row-reverse my-10 justify-evenly items-center"
+            data-aos="fade-up"
+          >
+            <img class="w-[30rem] h-[19rem]" src="img/scrpyard.png" alt="" />
+            <div class="w-[20rem]">
+              <h3 class="text-[2rem] font-bold">Scrpyard</h3>
+              <p class="opacity-50">
                 Scrpyard has feature to <b>share</b> your project and
                 <b>buy</b> products of other users, It has <b>Cart feature</b>,
                 It is also integrated with <b>Razorpay's</b> payment gateway.
                 Scrpyard was build with <b>MERN Stack</b>.
               </p>
-              <button>
+              <button style="border-bottom: 1px solid lightblue">
                 <a href="https://github.com/rajkaranm/scrpyard" target="_blank"
                   >Github</a
                 >
               </button>
-              <button>
-                <a href="https://64a3bacf9bc5c71f5024b8e2--jade-melomakarona-35edba.netlify.app" target="_blank"
+              <button style="border-bottom: 1px solid lightblue">
+                <a
+                  href="https://64a3bacf9bc5c71f5024b8e2--jade-melomakarona-35edba.netlify.app"
+                  target="_blank"
                   >Preview</a
                 >
               </button>
             </div>
           </div>
-          <div class="project_box" data-aos="fade-up">
-            <img
-              src="img/crypton.png"
-              alt=""
-            />
-            <div class="project_details">
-              <h3>#3 Crypton</h3>
+          <div
+            class="w-full my-28 flex my-10 justify-evenly items-center"
+            data-aos="fade-up"
+          >
+            <img class="w-[30rem] h-[19rem]" src="img/crypton.png" alt="" />
+            <div class="w-[20rem]">
+              <h3 class="text-[2rem] font-bold">Crypton</h3>
               <h4>Crypton is Blockchain Based Application.</h4>
-              <p>
+              <p class="opacity-50">
                 It is integrated with <b>Meta Mask</b>. User can transfer ETH on
                 to another user's Wallet on <b>Etherium</b> blockchain. User is
                 provided with Tools page where user can view
@@ -242,21 +158,26 @@
                 >
               </button>
               <button>
-                <a href="https://flourishing-crostata-a4cff1.netlify.app" target="_blank"
+                <a
+                  href="https://flourishing-crostata-a4cff1.netlify.app"
+                  target="_blank"
                   >Preview</a
                 >
               </button>
             </div>
           </div>
-          <div class="project_box" data-aos="fade-up">
+          <div
+            class="w-full my-28 flex flex-row-reverse my-10 justify-evenly items-center"
+            data-aos="fade-up"
+          >
             <img
+              class="w-[30rem] h-[19rem]"
               src="img/monitoring_app.png"
               alt=""
             />
-            <div class="project_details">
-              <h3>#4 Cloud Resources Monitoring</h3>
-              <h4>It's DevOps project to monitor resources of cloud server.</h4>
-              <p>
+            <div class="w-[20rem]">
+              <h3 class="text-[2rem] font-bold">Cloud Resources Monitoring</h3>
+              <p class="opacity-50">
                 Its app build with <b>flask</b> and output the resources of the
                 cloud server. Using <b>docker</b> and <b>kubernetes</b> it is
                 deployed on AWS.
@@ -270,32 +191,30 @@
               </button>
             </div>
           </div>
-          <div class="project_box" data-aos="fade-up">
-            <img
-              src="img/ai_fusion.png"
-              alt=""
-            />
-            <div class="project_details">
-              <h3>#5 AI-Fusion</h3>
-              <p>
-                AI-Fusion is a open source project build with <b>NextJS</b>, It has multiple section 
-                where people can view AI related resources like tools, prompts and datasets.
-              </p>
-              <button>
-                <a
-                  href="https://github.com/Rajkaranm/tinder-frontend-clone"
-                  target="_blank"
-                  >Github</a
-                >
-              </button>
-              <button>
-                <a target="_blank" href="https://aifusion.vercel.app">Preview</a>
-              </button>
-            </div>
-          </div>
         </div>
         <!-- Project ends -->
-        <h2 class="title">Thanks For Visiting</h2>
+
+        <!-- about -->
+        <div class="flex justify-center items-center my-52">
+          <div class="flex justify-evenly items-center">
+            <div>
+              <h1 class="text-[3rem] text-blue-500 font-bold">About</h1>
+              <h1 class="w-[15rem] text-[2rem]">I'm a Problem Solver</h1>
+            </div>
+            <p class="w-[30rem] opacity-50">
+              I by mistakenly discovered programming in lockdown and fell in
+              love with it, Whole lockdown I spend programming and exploring
+              many areas of programming which made me a jack of all trade. And
+              For now, I'm actively learning to <b>Cybersecurity</b>, I'm highly
+              skilled in <b>Full stack development</b>. I can also work with
+              <b>DevOps</b> tools. I can develop high performance application
+              and deploy it on cloud services like <b>AWS</b> and <b>GCP</b>.
+              Further I am developing skill in Ethical Hacking.
+            </p>
+          </div>
+        </div>
+        <!-- about ends -->
+        <h2 class="text-center">Thanks For Visiting</h2>
       </div>
     </div>
     <!-- container ends -->
