@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import { useEffect } from "react";
 import { useThemeContext } from "@/context/store";
 import Navbar from "@/components/Navbar";
@@ -25,21 +24,21 @@ export default function Home() {
     <div className="text-[--dark-bg] dark:text-[--light-bg]">
       <Navbar /> {/* Navbar */}
       {/* Short About us || Landing Page */}
-      <div className="w-full h-[40rem] flex flex-col justify-center items-center">
-        <h1 className="pb-3 text-7xl font-bold">Hi, I'm Rajkaran</h1>
-        <p className="pb-8 w-[47rem] text-3xl mt-5 mb-10">
+      <div className="px-10 w-full h-[40rem] flex flex-col justify-center items-center">
+        <h1 className="text-4xl md:text-7xl pb-3 font-bold">Hi, I'm Rajkaran</h1>
+        <p className="text-2xl text-center pb-8 md:w-[47rem] md:text-3xl mt-5 mb-10">
           I have build many Full Stack Application from Blockchain to
           E-commerce, I Also have a lot interest Cyber Security.
         </p>
-        <div className="">
+        <div className="flex flex-col md:flex-row">
           <Link
-            className="py-3 px-10 m-5 border-2 rounded-3xl bg-[--dark-bg] text-white dark:bg-white dark:text-black"
+            className="m-3 py-3 px-5 border-2 rounded-3xl bg-[--dark-bg] text-white dark:bg-white dark:text-black"
             href="https://medium.com/@imrajkaran"
           >
             Read My Articles
           </Link>
           <Link
-            className="py-3 px-10 m-5 border-2 rounded-3xl bg-[--dark-bg] text-white dark:bg-white dark:text-black"
+            className="m-3 py-3 px-5 border-2 rounded-3xl bg-[--dark-bg] text-white dark:bg-white dark:text-black"
             href="#projects"
           >
             View My Projects

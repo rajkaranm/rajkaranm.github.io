@@ -1,9 +1,9 @@
 export default function Footer() {
   return (
-    <div className="px-48 w-full h-96 flex justify-between items-center">
+    <div className="w-full p-10 h-96 flex flex-col justify-center md:px-48 md:flex-row md:justify-between">
       <div>
-        <h1 className="py-5 text-4xl font-bold">Rajkaran Mishra</h1>
-        <p className="w-[30rem]">
+        <h1 className="py-5 text-4xl font-bold sm:text-center">Rajkaran Mishra</h1>
+        <p className="w-[20rem] md:w-[30rem]">
           I have build many Full Stack Application from Blockchain to
           E-commerce, I Also have a lot interest Cyber Security.
         </p>

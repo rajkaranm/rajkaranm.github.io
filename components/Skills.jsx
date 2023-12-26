@@ -7,7 +7,7 @@ export default function Skills() {
     <div id="skills" className="p-8">
       <h1 className="text-6xl font-bold text-center">WHAT DO I OFFER</h1>
 
-      <div className="mx-40 flex justify-evenly">
+      <div className="mx-40 flex flex-wrap justify-evenly">
         
         <div className="h-96 flex flex-col justify-center items-center">
           <PiDevToLogoFill className="text-7xl" />
