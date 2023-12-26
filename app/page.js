@@ -7,6 +7,7 @@ import Link from "next/link";
 import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
 import Footer from "@/components/Footer";
+import Divider from "@/components/Divider";
 
 export default function Home() {
   const { theme } = useThemeContext();
@@ -25,8 +26,8 @@ export default function Home() {
       <Navbar /> {/* Navbar */}
       {/* Short About us || Landing Page */}
       <div className="w-full h-[40rem] flex flex-col justify-center items-center">
-        <h1 className="text-7xl font-bold">Hi, I'm Rajkaran</h1>
-        <p className="w-[45rem] text-3xl mt-5 mb-10">
+        <h1 className="pb-3 text-7xl font-bold">Hi, I'm Rajkaran</h1>
+        <p className="pb-8 w-[47rem] text-3xl mt-5 mb-10">
           I have build many Full Stack Application from Blockchain to
           E-commerce, I Also have a lot interest Cyber Security.
         </p>
@@ -45,24 +46,13 @@ export default function Home() {
           </Link>
         </div>
       </div>
-      <div className="flex justify-center">
-        <hr className="w-2/3 h-px my-8 bg-gray-200 border-1 border-dashed dark:bg-gray-700" />
-      </div>
-
+      <Divider />
       {/* Skills Section */}
       <Skills />
-
-      <div className="flex justify-center">
-        <hr className="w-2/3 h-px my-8 bg-gray-200 border-1 border-dashed dark:bg-gray-700" />
-      </div>
-
+      <Divider />
       {/* Projects Section */}
       <Projects />
-
-      <div className="flex justify-center">
-        <hr className="w-2/3 h-px my-8 bg-gray-200 border-1 border-dashed dark:bg-gray-700" />
-      </div>
-
+      <Divider />
       {/* Footer */}
       <Footer />
     </div>

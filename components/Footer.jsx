@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <div className="px-32 w-full h-96 flex justify-between items-center">
+    <div className="px-48 w-full h-96 flex justify-between items-center">
       <div>
         <h1 className="py-5 text-4xl font-bold">Rajkaran Mishra</h1>
         <p className="w-[30rem]">
