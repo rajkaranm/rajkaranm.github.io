@@ -1,6 +1,5 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { ThemeContextProvider } from "@/context/store";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,13 +25,10 @@ export default function RootLayout({ children }) {
         <meta property="og:site_name" content="Rajkaran Mishra" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@RealRajkaran" />
-        <script src="https://substackapi.com/widget.js" async></script>
+        <link href="https://fonts.googleapis.com/css2?family=Long+Cang&family=Lora:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
       </head>
-      <body className={inter.className + "bg-[--light-bg] dark:bg-[--dark-bg] text-[--dark-bg] dark:text-[--light-bg]"}>
-        <ThemeContextProvider>
+      <body className={inter.className}>
           {children}
-        </ThemeContextProvider>
-        
       </body>
     </html>
   );

@@ -9,15 +9,6 @@ import Footer from "@/components/Footer";
 import Divider from "@/components/Divider";
 
 export default function Home() {
-  const { theme } = useThemeContext();
-
-  useEffect(() => {
-    if (theme === "dark") {
-      document.documentElement.classList.add("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-    }
-  }, [theme]);
 
   return (
     // Root class for text color toggle
