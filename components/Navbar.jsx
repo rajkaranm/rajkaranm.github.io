@@ -15,11 +15,10 @@ export default function Navbar() {
       {!menuToggle ? (
         <>
           <div className="w-full min-h-16 border-b px-1 md:px-20 md:flex-row flex flex-row justify-between items-center">
+            <Link href="/">
             <h1 className="text-3xl flex-none font-bold">Rajkaran Mishra</h1>
+            </Link>
             <div className="relative hidden top-14 right-10 md:flex md:flex-1 md:justify-evenly md:static md:flex-row"> 
-              <Link className="hover:underline" href="#skills">
-                Skills
-              </Link>
               <Link className="hover:underline" href="#">
                 Career
               </Link>
@@ -34,7 +33,7 @@ export default function Navbar() {
               </Link>
               <Link
                 className="hover:underline"
-                href="https://rajkaran.substack.com/"
+                href="/newsletter"
               >
                 Newsletter
               </Link>
@@ -63,11 +62,10 @@ export default function Navbar() {
       ) : (
         <>
           <div className="pt-3 h-52 w-full border-b px-1 md:px-20 md:flex-row flex flex-row items-start">
+            <Link href="/">
             <h1 className="text-3xl flex-none font-bold">Rajkaran Mishra</h1>
+            </Link>
             <div className="relative top-14 right-10 flex flex-col flex-1 justify-evenly md:static">
-              <Link className="hover:underline" href="#skills">
-                Skills
-              </Link>
               <Link className="hover:underline" href="#">
                 Career
               </Link>
@@ -82,7 +80,7 @@ export default function Navbar() {
               </Link>
               <Link
                 className="hover:underline"
-                href="https://rajkaran.substack.com/"
+                href="/newsletter"
               >
                 Newsletter
               </Link>

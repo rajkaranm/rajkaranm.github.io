@@ -8,7 +8,7 @@ export default function Footer() {
           E-commerce, I Also have a lot interest Cyber Security.
         </p>
       </div>
-      <div>
+      <div className="mt-10">
         <h1 className="text-center text-3xl font-bold">Social</h1>
         <div className="w-60 m-5 flex justify-evenly items-center">
           <a href="mailto:rajkaranvir456@gmail.com">

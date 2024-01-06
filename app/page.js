@@ -21,8 +21,8 @@ export default function Home() {
 
   return (
     // Root class for text color toggle
-    <div className="text-[--dark-bg] dark:text-[--light-bg]">
-      <Navbar /> {/* Navbar */}
+    <div className="">
+      <Navbar /> 
       {/* Short About us || Landing Page */}
       <div className="px-10 w-full h-[40rem] flex flex-col justify-center items-center">
         <h1 className="text-4xl md:text-7xl pb-3 font-bold">Hi, I'm Rajkaran</h1>
@@ -52,7 +52,6 @@ export default function Home() {
       {/* Projects Section */}
       <Projects />
       <Divider />
-      {/* Footer */}
       <Footer />
     </div>
   );

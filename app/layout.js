@@ -26,9 +26,13 @@ export default function RootLayout({ children }) {
         <meta property="og:site_name" content="Rajkaran Mishra" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@RealRajkaran" />
+        <script src="https://substackapi.com/widget.js" async></script>
       </head>
-      <body className={inter.className + "bg-[--light-bg] dark:bg-[--dark-bg]"}>
-        <ThemeContextProvider>{children}</ThemeContextProvider>
+      <body className={inter.className + "bg-[--light-bg] dark:bg-[--dark-bg] text-[--dark-bg] dark:text-[--light-bg]"}>
+        <ThemeContextProvider>
+          {children}
+        </ThemeContextProvider>
+        
       </body>
     </html>
   );
