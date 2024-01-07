@@ -1,0 +1,11 @@
+.divider_box {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.divider {
+    width: 80%;
+    opacity: 50%;
+    border-width: 2px;
+}

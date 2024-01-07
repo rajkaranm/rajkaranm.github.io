@@ -1,7 +1,7 @@
-import { Inter } from "next/font/google";
-import "./globals.css";
+import { Inter } from 'next/font/google'
+import './globals.css'
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: "Rajkaran Mishra - Programmer, Hacker and Writer.",
@@ -27,9 +27,7 @@ export default function RootLayout({ children }) {
         <meta name="twitter:site" content="@RealRajkaran" />
         <link href="https://fonts.googleapis.com/css2?family=Long+Cang&family=Lora:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
       </head>
-      <body className={inter.className}>
-          {children}
-      </body>
+      <body className={inter.className}>{children}</body>
     </html>
-  );
+  )
 }

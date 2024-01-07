@@ -1,49 +1,39 @@
-"use client";
-import { useEffect } from "react";
-import { useThemeContext } from "@/context/store";
-import Navbar from "@/components/Navbar";
-import Link from "next/link";
-import Projects from "@/components/Projects";
-import Skills from "@/components/Skills";
-import Footer from "@/components/Footer";
-import Divider from "@/components/Divider";
+import Image from "next/image";
+import styles from "./page.module.css";
+import Navbar from "@/components/Navbar/Navbar";
+import Divider from "@/components/Divider/Divider";
+import Skills from "@/components/Skills/Skills";
+import Footer from "@/components/Footer/Footer";
 
 export default function Home() {
-
   return (
-    // Root class for text color toggle
-    <div className="">
-      <Navbar /> 
-      {/* Short About us || Landing Page */}
-      <div className="px-10 w-full h-[40rem] flex flex-col justify-center items-center">
-        <h1 className="text-4xl md:text-7xl pb-3 font-bold">Hi, I'm Rajkaran</h1>
-        <p className="text-2xl text-center pb-8 md:w-[47rem] md:text-3xl mt-5 mb-10">
-          I have build many Full Stack Application from Blockchain to
-          E-commerce, I Also have a lot interest Cyber Security.
-        </p>
-        <div className="flex flex-col md:flex-row">
-          <Link
-            className="m-3 py-3 px-5 border-2 rounded-3xl bg-[--dark-bg] text-white dark:bg-white dark:text-black"
-            href="https://medium.com/@imrajkaran"
-          >
-            Read My Articles
-          </Link>
-          <Link
-            className="m-3 py-3 px-5 border-2 rounded-3xl bg-[--dark-bg] text-white dark:bg-white dark:text-black"
-            href="#projects"
-          >
-            View My Projects
-          </Link>
+    <main className={styles.main}>
+      <Navbar />
+      <div className={styles.landing}>
+        <div className={styles.about}>
+          <h1>Hi, I'm Rajkaran</h1>
+          <p className={styles.desc}>
+            I build robust full stack application and protect them from getting hacked. Besides from my technical skill I love writing and blogging about technology and self improvement.
+          </p>
+          <div className={styles.btn_box}>
+            <button className={styles.btn}>Check Blog</button>
+            <button className={styles.btn}>Check Projects</button>
+          </div>
+        </div>
+        <div>
+          <Image
+            className={styles.profile_img}
+            src="/profile.jpg"
+            width={400}
+            height={400}
+          />
         </div>
       </div>
       <Divider />
-      {/* Skills Section */}
       <Skills />
       <Divider />
-      {/* Projects Section */}
-      <Projects />
-      <Divider />
       <Footer />
-    </div>
+
+    </main>
   );
 }

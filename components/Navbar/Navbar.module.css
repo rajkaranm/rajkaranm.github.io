@@ -1,0 +1,51 @@
+.nav {
+    width: 100vw;
+    height: 90px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: black;
+}
+
+.logo {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+.logo p {
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+.nav_links {
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav_links a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.8rem;
+}
+
+.nav_links a:hover {
+    text-decoration: underline;
+}
+
+.nav_icons{
+    width: 13%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav_icon {
+    color: white;
+    font-size: 1.5rem;
+    transition: all 0.3s ease-in;
+}
+
+.nav_icon:hover {
+    opacity: 50%;
+}
