@@ -49,3 +49,19 @@
 .nav_icon:hover {
     opacity: 50%;
 }
+
+@media only screen and (max-width:480px)  { 
+    /* smartphones, Android phones, landscape iPhone */ 
+    .nav {
+        flex-direction: column;
+        height: 150px;
+    }
+
+    .nav_links {
+        width: 100%;
+    }
+
+    .nav_icons {
+        width: 80%;
+    }
+}

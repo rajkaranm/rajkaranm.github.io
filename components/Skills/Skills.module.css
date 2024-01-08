@@ -6,7 +6,7 @@
 
 .skills_container {
     width: 100vw;
-    height: 80vh;
+    height: 35rem;
     padding: 0 8rem;
 }
 
@@ -22,9 +22,24 @@
 .skills_card {
     width: 25rem;
     text-align: center;
-    padding: 0.5rem;
+    padding: 1rem;
 }
 
 .skills_card_icon {
     font-size: 4rem;
+}
+
+@media only screen and (max-width:480px) {
+    /* smartphones, Android phones, landscape iPhone */ 
+    .skills_container {
+        height: 50rem;
+        padding: 0.5rem;
+        margin-bottom: 7rem;
+    }
+
+    .skills_card {
+        width: 100%;
+        padding: 1.8rem 0.5rem;
+    }
+
 }

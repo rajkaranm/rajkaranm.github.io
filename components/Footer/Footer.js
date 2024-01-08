@@ -13,7 +13,6 @@ export default function Footer() {
             E-commerce, I Also have a lot interest Cyber Security.
           </p>
         </div>
-        <hr className={styles.footer_hr} />
         <div className={styles.footer_links}>
           <Link href="https://medium.com/@imrajkaran" target="_blank">
             BLOG
@@ -29,7 +28,7 @@ export default function Footer() {
       <div>
         <iframe
           src="https://rajkaran.substack.com/embed"
-          width="480"
+          width="380"
           height="320"
           frameBorder="0"
           scrolling="no"
