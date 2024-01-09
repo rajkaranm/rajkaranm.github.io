@@ -16,9 +16,9 @@ export default function Navbar() {
           <Link href="/newsletter" target="_blank">
             NEWSLETTER
           </Link>
-          <Link href="">PROJECTS</Link>
-          <Link href="">ABOUT</Link>
-          <Link href="">CONTACT</Link>
+          <Link href="/portfolio">PORTFOLIO</Link>
+          <Link href="/about">ABOUT</Link>
+          <Link href="/contact">CONTACT</Link>
         </div>
 
         <div className={styles.nav_icons}>

@@ -6,7 +6,7 @@ import { MdOutlineSecurity } from "react-icons/md";
 export default function Skills() {
   return (
     <div className={styles.skills_container}>
-      <h1 className={styles.heading}>WHAT DO I OFFER</h1>
+      <h1 className="heading">WHAT DO I OFFER</h1>
 
       <div className={styles.skills}>
         <div className={styles.skills_card}>
