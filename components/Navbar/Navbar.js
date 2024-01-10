@@ -26,7 +26,7 @@ export default function Navbar() {
             <i className={`fa-brands fa-youtube ${styles.nav_icon}`}></i>
           </a>
           <a href="https://twitter.com/RealRajkaran" target="_blank">
-            <i className={`fa-brands fa-twitter ${styles.nav_icon}`}></i>
+            <i className={`fa-brands fa-x-twitter ${styles.nav_icon}`}></i>
           </a>
           <a href="https://www.linkedin.com/in/raj-karan/" target="_blank">
             <i className={`fa-brands fa-linkedin-in ${styles.nav_icon}`}></i>
