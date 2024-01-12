@@ -14,7 +14,7 @@ export default function About() {
           <br />
           <br />
           I love writing. I have been reading a lot about self-improvement. I
-          share technical programming and hacking concepts at <a href="https://medium.com/@imrajkaran">Medium</a> , and all
+          share technical programming and hacking concepts at <a href="https://medium.com/@imrajkaran">Medium</a>, and all
           the self-improvement articles are shared through my newsletter <a href="https://rajkaran.substack.com">Becoming Master</a><br />
           <br />I 'm working on my first book "Master of Note-Taking". Why
           Note-Taking? because I have observe that my note-taking process have
