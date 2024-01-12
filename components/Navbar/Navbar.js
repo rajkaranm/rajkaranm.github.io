@@ -25,7 +25,7 @@ export default function Navbar() {
           <a href="https://www.youtube.com/@ItsRkEver/" target="_blank">
             <i className={`fa-brands fa-youtube ${styles.nav_icon}`}></i>
           </a>
-          <a href="https://twitter.com/RealRajkaran" target="_blank">
+          <a href="https://twitter.com/imrajkaran_" target="_blank">
             <i className={`fa-brands fa-x-twitter ${styles.nav_icon}`}></i>
           </a>
           <a href="https://www.linkedin.com/in/raj-karan/" target="_blank">
@@ -34,7 +34,7 @@ export default function Navbar() {
           <a href="https://github.com/rajkaranm" target="_blank">
             <i className={`fa-brands fa-github ${styles.nav_icon}`}></i>
           </a>
-          <a href="https://www.instagram.com/realrajkaran/" target="_blank">
+          <a href="https://www.instagram.com/imrajkaran_" target="_blank">
             <i className={`fa-brands fa-instagram ${styles.nav_icon}`}></i>
           </a>
         </div>

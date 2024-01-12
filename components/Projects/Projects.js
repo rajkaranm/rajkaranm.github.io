@@ -4,7 +4,7 @@ import styles from "./Projects.module.css"
 export default function Projects() {
   return (
     <>
-      <h1 className="heading">PORTFOLIO</h1>
+      <h1 className="heading">PROJECTS</h1>
       <div className={styles.project_container}>
         <div
           className={styles.project_card}
