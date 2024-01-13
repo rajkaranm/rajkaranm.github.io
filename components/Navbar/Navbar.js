@@ -22,7 +22,7 @@ export default function Navbar() {
         </div>
 
         <div className={styles.nav_icons}>
-          <a href="https://www.youtube.com/@ItsRkEver/" target="_blank">
+          <a href="https://www.youtube.com/@imrajkaran/" target="_blank">
             <i className={`fa-brands fa-youtube ${styles.nav_icon}`}></i>
           </a>
           <a href="https://twitter.com/imrajkaran_" target="_blank">
