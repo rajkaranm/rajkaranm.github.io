@@ -35,7 +35,7 @@ export default function Footer() {
         ></iframe>
       </div>
     </div>
-      <p style={{"textAlign": "center", "padding": "1rem"}}>&#169; Rajkara Mishra</p>
+      <p style={{"textAlign": "center", "padding": "1rem"}}>&#169; Rajkaran Mishra</p>
     </>
   );
 }

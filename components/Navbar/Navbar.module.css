@@ -35,7 +35,7 @@
 }
 
 .nav_icons{
-    width: 13%;
+    width: 15%;
     display: flex;
     justify-content: space-evenly;
 }
@@ -50,7 +50,7 @@
     opacity: 50%;
 }
 
-@media only screen and (max-width:480px)  { 
+@media only screen and (max-width:500px)  { 
     /* smartphones, Android phones, landscape iPhone */ 
     .nav {
         flex-direction: column;
@@ -64,4 +64,12 @@
     .nav_icons {
         width: 80%;
     }
+}
+
+@media only screen and (max-width: 820px) {
+    /* Ipad and medium size devies  */
+    .nav_icon {
+        width: 39%;
+    }
+
 }
