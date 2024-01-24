@@ -6,7 +6,7 @@ export default function Navbar() {
     <nav>
       <div className={styles.nav}>
         <Link href="/" className={styles.logo}>
-          <h1 className="">Rajkaran Mishra.</h1>
+          <h1 className="">Rajkaran Mishra</h1>
           <p>Coder | Hacker | Writer</p>
         </Link>
         <div className={styles.nav_links}>

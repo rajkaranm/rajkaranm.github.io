@@ -20,12 +20,12 @@ export default function Footer() {
           <Link href="/newsletter" target="_blank">
             NEWSLETTER
           </Link>
-          <Link href="">PROJECTS</Link>
-          <Link href="">ABOUT</Link>
-          <Link href="">CONTACT</Link>
+          <Link href="/portfolio">PROJECTS</Link>
+          <Link href="/about">ABOUT</Link>
+          <Link href="/contact">CONTACT</Link>
         </div>
       </div>
-      <div>
+      <div className={styles.newsletter}>
         <iframe
           src="https://rajkaran.substack.com/embed"
           width="380"

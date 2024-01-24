@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import styles from "./page.module.css";
 import Navbar from "@/components/Navbar/Navbar";
 import Divider from "@/components/Divider/Divider";
@@ -16,8 +17,8 @@ export default function Home() {
             I build robust full stack application and protect them from getting hacked. Besides from my technical skill I love writing and blogging about technology and self improvement.
           </p>
           <div className={styles.btn_box}>
-            <button className={styles.btn}>Check Blog</button>
-            <button className={styles.btn}>Check Projects</button>
+            <button className={styles.btn}><Link href="https://medium.com/@imrajkaran">Check Blog</Link></button>
+            <button className={styles.btn}><Link href="/portfolio">Check Projects</Link></button>
           </div>
         </div>
         <div>
