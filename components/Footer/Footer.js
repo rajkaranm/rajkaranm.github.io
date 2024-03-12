@@ -13,17 +13,6 @@ export default function Footer() {
             E-commerce, I Also have a lot interest Cyber Security.
           </p>
         </div>
-        <div className={styles.footer_links}>
-          <Link href="https://medium.com/@imrajkaran" target="_blank">
-            BLOG
-          </Link>
-          <Link href="/newsletter" target="_blank">
-            NEWSLETTER
-          </Link>
-          <Link href="/portfolio">PROJECTS</Link>
-          <Link href="/about">ABOUT</Link>
-          <Link href="/contact">CONTACT</Link>
-        </div>
       </div>
       <div className={styles.newsletter}>
         <iframe
