@@ -10,7 +10,7 @@ export default function Navbar() {
           <p>Coder | Hacker | Writer</p>
         </Link>
         <div className={styles.nav_links}>
-          <Link href="https://medium.com/@imrajkaran" target="_blank">
+          <Link href="https://rajkaranm.github.io/blog/">
             BLOG
           </Link>
           <Link href="/newsletter" target="_blank">
@@ -36,6 +36,9 @@ export default function Navbar() {
           </a>
           <a href="https://www.instagram.com/imrajkaran_" target="_blank">
             <i className={`fa-brands fa-instagram ${styles.nav_icon}`}></i>
+          </a>
+          <a href="https://medium.com/@imrajkaran" target="_blank">
+            <i className={`fa-brands fa-medium ${styles.nav_icon}`}></i>
           </a>
         </div>
       </div>
