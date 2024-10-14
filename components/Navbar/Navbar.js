@@ -10,7 +10,7 @@ export default function Navbar() {
           <p>Coder | Hacker | Writer</p>
         </Link>
         <div className={styles.nav_links}>
-          <Link href="https://rajkaranm.github.io/blog/">
+          <Link target="_blank" href="https://rajkaranm.github.io/blog/">
             BLOG
           </Link>
           <Link href="/newsletter" target="_blank">
