@@ -17,7 +17,7 @@ export default function Home() {
             I build robust full stack application and protect them from getting hacked. Besides from my technical skill I love writing and blogging about technology and self improvement.
           </p>
           <div className={styles.btn_box}>
-            <button className={styles.btn}><Link href="https://rajkaranm.github.io/blog/">Check Blog</Link></button>
+            <button className={styles.btn}><Link target="_blank" href="https://rajkaranm.github.io/blog/">Check Blog</Link></button>
             <button className={styles.btn}><Link href="/portfolio">Check Projects</Link></button>
           </div>
         </div>
