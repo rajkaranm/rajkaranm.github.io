@@ -12,14 +12,16 @@
 
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #1E1F21;
+  color: white;
 }
 
 
 .heading {
-    text-align: center;
-    padding: 3rem 0;
-    font-size: 3rem;
+  text-align: center;
+  padding: 3rem 0;
+  font-size: 3rem;
 }

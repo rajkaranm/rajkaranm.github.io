@@ -1,75 +1,89 @@
 .nav {
-    width: 100vw;
-    height: 90px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: black;
+  width: 100vw;
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3rem;
 }
 
 .logo {
-    text-decoration: none;
-    color: white;
-    text-align: center;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+}
+
+.logo_name {
+  color: #D20042;
+  transition: all 0.3s ease-in-out;
+}
+
+.logo_name:hover {
+  color: white;
 }
 
 .logo p {
-    font-size: 0.9rem;
-    font-weight: 300;
+  font-size: 0.9rem;
+  font-weight: 300;
 }
 
 .nav_links {
-    width: 40%;
-    display: flex;
-    justify-content: space-evenly;
+  width: 40%;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .nav_links a {
-    text-decoration: none;
-    color: white;
-    font-size: 0.8rem;
+  text-decoration: none;
+  color: white;
+  font-size: 0.8rem;
+  color: white;
+  transition: all 0.3s ease-in-out;
 }
 
 .nav_links a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
+  color: #D20042;
 }
 
-.nav_icons{
-    width: 13rem;
-    display: flex;
-    justify-content: space-evenly;
+.nav_icons {
+  width: 13rem;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .nav_icon {
-    color: white;
-    font-size: 1.5rem;
-    transition: all 0.3s ease-in;
+  color: white;
+  font-size: 1.5rem;
+  transition: all 0.3s ease-in;
 }
 
 .nav_icon:hover {
-    opacity: 50%;
+  opacity: 50%;
 }
 
-@media only screen and (max-width:500px)  { 
-    /* smartphones, Android phones, landscape iPhone */ 
-    .nav {
-        flex-direction: column;
-        height: 150px;
-    }
+@media only screen and (max-width:500px) {
 
-    .nav_links {
-        width: 100%;
-    }
+  /* smartphones, Android phones, landscape iPhone */
+  .nav {
+    flex-direction: column;
+    height: 150px;
+  }
 
-    .nav_icons {
-        width: 80%;
-    }
+  .nav_links {
+    width: 100%;
+  }
+
+  .nav_icons {
+    width: 80%;
+  }
 }
 
 @media only screen and (max-width: 820px) {
-    /* Ipad and medium size devies  */
-    .nav_icon {
-        width: 39%;
-    }
+
+  /* Ipad and medium size devies  */
+  .nav_icon {
+    width: 39%;
+  }
 
 }

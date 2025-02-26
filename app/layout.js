@@ -1,15 +1,23 @@
+'use client'
 import { Inter } from "next/font/google";
 import "./globals.css";
+import 'aos/dist/aos.css'; // Import AOS styles globally
+import Aos from 'aos';
+import { useEffect } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata = {
-  title: "Rajkaran Mishra - Programmer, Hacker and Writer.",
-  description:
-    "Rajkaran Mishra is a programmer, hacker and writer. He writes about self-improvement.",
-};
+// export const metadata = {
+//   title: "Rajkaran Mishra - Programmer, Hacker and Writer.",
+//   description:
+//     "Rajkaran Mishra is a programmer, hacker and writer. He writes about self-improvement.",
+// };
 
 export default function RootLayout({ children }) {
+  useEffect(() => {
+    Aos.init({ duration: 1000 }); // Customize the duration or other options as needed
+  }, []);
+
   return (
     <html lang="en">
       <head>

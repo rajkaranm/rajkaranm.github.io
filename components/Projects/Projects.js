@@ -73,7 +73,7 @@ export default function Projects() {
             <p className="opacity-50">
               Share Source is <b>Social Media</b> Forum were people can join various
               channels and post interesting thing, It is build using power of <b>SvelteKit</b> and <b>PostgreSQL</b>.
-               
+
             </p>
             <button className={styles.btn}>
               <a
