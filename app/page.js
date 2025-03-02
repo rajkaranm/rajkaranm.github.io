@@ -19,7 +19,7 @@ export default function Home() {
               height={200}
             />
           </div>
-          <h1>Hi, I'm Rajkaran</h1>
+          <h1 className={styles.intro}>Hi, I'm Rajkaran</h1>
           <p className={styles.desc}>
             I build robust full stack application and protect them from getting hacked. Besides from my technical skill I love writing and blogging about technology and self improvement.
           </p>

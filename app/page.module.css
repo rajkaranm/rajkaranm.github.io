@@ -4,7 +4,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 6rem 0rem;
+  padding: 5rem 0rem;
+}
+
+.intro {
+  margin: 0;
 }
 
 .about {

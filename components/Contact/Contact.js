@@ -3,7 +3,7 @@ import styles from "./Contact.module.css";
 
 export default function About() {
   return (
-    <div className={styles.about}>
+    <div data-aos="fade-up" className={styles.about}>
       <div className={styles.about_info}>
         <div>
           <h1 className={styles.about_heading}>Contact.</h1>

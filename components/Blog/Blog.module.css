@@ -1,0 +1,36 @@
+.blog_container {
+  margin: 0 20vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 70vh;
+}
+
+.blog_item {
+  margin-top: 1.5rem;
+  list-style-type: none;
+}
+
+.blog_header {
+  font-size: 3rem;
+}
+
+.blog_title {
+  font-size: 1.2rem;
+  margin-top: 0.4rem;
+  opacity: 0.9;
+  text-decoration: underline;
+}
+
+.blog_date {
+  font-size: 0.8rem;
+  opacity: 0.7;
+  margin-top: 0.5rem;
+}
+
+@media only screen and (max-width:500px) {
+  .blog_container {
+    margin: 0 5vw;
+  }
+
+}

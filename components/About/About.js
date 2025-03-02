@@ -4,8 +4,8 @@ export default function About() {
   return (
     <div className={styles.about_container}>
       <div className={styles.about}>
-        <h1 className={styles.about_heading}>About.</h1>
-        <p className={styles.about_para}>
+        <h1 className="heading">About</h1>
+        <p data-aos="fade-up" className={styles.about_para}>
           I'm Rajkaran Mishra, a programmer, hacker and writer. I have been
           working on a lot of projects from e-commerce to blockchain web
           applications.

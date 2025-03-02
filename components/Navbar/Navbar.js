@@ -9,7 +9,7 @@ export default function Navbar() {
           <h1 className={styles.logo_name}>Rajkaran.</h1>
         </Link>
         <div className={styles.nav_links}>
-          <Link target="_blank" href="https://rajkaranm.github.io/blog/">
+          <Link href="/blog">
             BLOG
           </Link>
           <Link href="/newsletter" target="_blank">
