@@ -6,10 +6,10 @@ body[data-theme='light'] {
 }
 
 body[data-theme='dark'] {
-  --background-color: #0c4a6e;
+  --background-color: #111827;
   --text-color: #ffffff;
   --primary-color: #0284c7;
-  --secondary-color: #075985;
+  --secondary-color: #0c4a6e;
 }
 
 * {
