@@ -13,15 +13,15 @@ export default function Navbar() {
           <h1 className={styles.logo_name}>Rajkaran.</h1>
         </Link>
         <div className={styles.nav_links}>
+          <Link href="/">
+            HOME
+          </Link>
           <Link href="/blog">
             BLOG
           </Link>
-          <Link href="/newsletter" target="_blank">
-            NEWSLETTER
+          <Link href="/portfolio">
+            PORTFOLIO
           </Link>
-          <Link href="/portfolio">PORTFOLIO</Link>
-          <Link href="/about">ABOUT</Link>
-          <Link href="/contact">CONTACT</Link>
           <button onClick={toggleTheme} className={styles.theme_toggle}>
             {theme === 'light' ? <i className="fa-solid fa-moon"></i> : <i className="fa-solid fa-sun"></i>}
           </button>

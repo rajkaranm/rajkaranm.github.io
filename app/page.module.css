@@ -53,6 +53,22 @@
   font-weight: bold;
 }
 
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.social_icons {
+  margin-top: 1rem;
+}
+
+.social_icons a {
+  font-size: 2rem;
+  margin: 0 0.5rem;
+  color: var(--text-color);
+}
+
 
 @media only screen and (max-width: 500px) {
 

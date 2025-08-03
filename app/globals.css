@@ -1,15 +1,15 @@
 body[data-theme='light'] {
-  --background-color: #f0f8ff;
-  --text-color: #00008b;
-  --primary-color: #0000cd;
-  --secondary-color: #4682b4;
+  --background-color: #ffffff;
+  --text-color: #000000;
+  --primary-color: #0284c7;
+  --secondary-color: #e0f2fe;
 }
 
 body[data-theme='dark'] {
-  --background-color: #000033;
-  --text-color: #e6e6fa;
-  --primary-color: #add8e6;
-  --secondary-color: #87cefa;
+  --background-color: #0c4a6e;
+  --text-color: #ffffff;
+  --primary-color: #0284c7;
+  --secondary-color: #075985;
 }
 
 * {
