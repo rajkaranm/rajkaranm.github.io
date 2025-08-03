@@ -3,20 +3,19 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import 'aos/dist/aos.css'; // Import AOS styles globally
 import Aos from 'aos';
-import { useEffect } from "react";
+import { useContext, useEffect } from "react";
+import { ThemeProvider } from "@/context/ThemeContext";
+import ThemeContext from "@/context/ThemeContext";
 
 const inter = Inter({ subsets: ["latin"] });
 
-// export const metadata = {
-//   title: "Rajkaran Mishra - Programmer, Hacker and Writer.",
-//   description:
-//     "Rajkaran Mishra is a programmer, hacker and writer. He writes about self-improvement.",
-// };
+function RootLayoutContent({ children }) {
+  const { theme } = useContext(ThemeContext);
 
-export default function RootLayout({ children }) {
   useEffect(() => {
-    Aos.init({ duration: 1000 }); // Customize the duration or other options as needed
-  }, []);
+    Aos.init({ duration: 1000 });
+    document.body.setAttribute('data-theme', theme);
+  }, [theme]);
 
   return (
     <html lang="en">
@@ -45,5 +44,13 @@ export default function RootLayout({ children }) {
       </head>
       <body className={inter.className}>{children}</body>
     </html>
+  );
+}
+
+export default function RootLayout({ children }) {
+  return (
+    <ThemeProvider>
+      <RootLayoutContent>{children}</RootLayoutContent>
+    </ThemeProvider>
   );
 }

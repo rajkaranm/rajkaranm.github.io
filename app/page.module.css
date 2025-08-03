@@ -5,10 +5,12 @@
   justify-content: center;
   align-items: center;
   padding: 5rem 0rem;
+  background-color: var(--background-color);
 }
 
 .intro {
   margin: 0;
+  color: var(--text-color);
 }
 
 .about {
@@ -22,12 +24,14 @@
 .about h1 {
   font-size: 3rem;
   padding-bottom: 0.4rem;
+  color: var(--text-color);
 }
 
 .desc {
   width: 80%;
   text-align: center;
   opacity: 0.7;
+  color: var(--text-color);
 }
 
 .profile_img {
@@ -36,7 +40,7 @@
 }
 
 .btn a {
-  color: white;
+  color: var(--text-color);
   text-decoration: none;
 }
 
@@ -44,8 +48,8 @@
   margin: 0.6rem;
   padding: 0.5rem 1rem;
   border-radius: 15px;
-  color: white;
-  background-color: black;
+  color: var(--text-color);
+  background-color: var(--secondary-color);
   font-weight: bold;
 }
 
