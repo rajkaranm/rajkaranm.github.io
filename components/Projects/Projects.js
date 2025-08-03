@@ -1,104 +1,41 @@
-import Image from "next/image";
-import styles from "./Projects.module.css"
+import ProjectCard from "../ProjectCard/ProjectCard";
+import styles from "./Projects.module.css";
+
+const projects = [
+  {
+    name: "#1 Crypton",
+    description: "Crypton is a blockchain application integrated with Meta Mask. Users can transfer ETH on the Ethereum blockchain and view live crypto prices.",
+    image: "https://raw.githubusercontent.com/rajkaranm/crypton/main/img/crypton.png",
+    github: "https://github.com/Rajkaranm/crypton",
+  },
+  {
+    name: "#2 Scrpyard",
+    description: "Scrpyard is a MERN stack E-Commerce website with features to share projects, buy products, a cart, and Razorpay integration.",
+    image: "https://raw.githubusercontent.com/rajkaranm/scrpyard/main/img/scrpyard.png",
+    github: "https://github.com/rajkaranm/scrpyard",
+  },
+  {
+    name: "#3 Share Source",
+    description: "Share Source is a social media forum built with SvelteKit and PostgreSQL, allowing users to join channels and post content.",
+    image: "https://raw.githubusercontent.com/rajkaranm/share_source/main/github-assests/share_source.png",
+    github: "https://github.com/rajkaranm/share_source",
+  },
+  {
+    name: "#4 Spacehub",
+    description: "Spacehub provides space information from various APIs like NASA's picture of the day. It is built with Django.",
+    image: "https://raw.githubusercontent.com/Rajkaranm/spacehub/master/img/home.jpg",
+    github: "https://github.com/Rajkaranm/spacehub",
+  },
+];
 
 export default function Projects() {
   return (
     <>
       <h1 className="heading">PROJECTS</h1>
       <div className={styles.project_container}>
-        <div
-          className={styles.project_card}
-          data-aos="fade-up"
-        >
-          <Image
-            src="https://raw.githubusercontent.com/rajkaranm/crypton/main/img/crypton.png"
-            alt=""
-            width="450"
-            height="290"
-          />
-          <div className={styles.project_card_info}>
-            <h3>#1 Crypton</h3>
-            <p className="opacity-50">
-              Crypton is <b>blockchacin</b> application. It is integrated with <b>Meta Mask</b>. User can transfer ETH on to
-              another user's Wallet on <b>Etherium</b> blockchain. User is provided
-              with Tools page where user can view live price and live graph of
-              the price of the coin.
-            </p>
-            <a href="https://github.com/Rajkaranm/spacehub" target="_blank" className={styles.btn}>
-              <i className="devicon-github-original"></i> Github
-            </a>
-          </div>
-        </div>
-
-        <div
-          className={styles.project_card}
-          data-aos="fade-up"
-        >
-          <Image
-            src="https://raw.githubusercontent.com/rajkaranm/scrpyard/main/img/scrpyard.png"
-            alt=""
-            width="450"
-            height="290"
-          />
-          <div className={styles.project_card_info}>
-            <h3 className="text-[2rem] font-bold">#2 Scrpyard</h3>
-            <p className="opacity-50">
-              Scrpyard is E-Commerce website, It has feature to <b>share</b>{" "}
-              your project and <b>buy</b> products of other users, It has{" "}
-              <b>Cart feature</b>, It is also integrated with <b>Razorpay's</b>{" "}
-              payment gateway. Scrpyard was build with <b>MERN Stack</b>.
-            </p>
-            <a href="https://github.com/rajkaranm/scrpyard" target="_blank" className={styles.btn}>
-              <i className="devicon-github-original"></i> Github
-            </a>
-          </div>
-        </div>
-
-        <div
-          className={styles.project_card}
-          data-aos="fade-up"
-        >
-          <Image
-            src="https://raw.githubusercontent.com/rajkaranm/share_source/main/github-assests/share_source.png"
-            alt=""
-            width="450"
-            height="290"
-          />
-          <div className={styles.project_card_info}>
-            <h3 className="text-[2rem] font-bold">#3 Share Source</h3>
-            <p className="opacity-50">
-              Share Source is <b>Social Media</b> Forum were people can join various
-              channels and post interesting thing, It is build using power of <b>SvelteKit</b> and <b>PostgreSQL</b>.
-
-            </p>
-            <a href="https://github.com/rajkaranm/share_source" target="_blank" className={styles.btn}>
-              <i className="devicon-github-original"></i> Github
-            </a>
-          </div>
-        </div>
-
-        <div
-          className={styles.project_card}
-          data-aos="fade-up"
-        >
-          <Image
-            src="https://raw.githubusercontent.com/Rajkaranm/spacehub/master/img/home.jpg"
-            alt=""
-            width="450"
-            height="290"
-          />
-          <div className={styles.project_card_info}>
-            <h3 className="text-[2rem] font-bold">#4 Spacehub</h3>
-            <p className="opacity-50">
-              It provide various information about space through <b>APIs</b>{" "}
-              like NASA's Astronomy picture of the day and Various Other APIs.
-              It is purely build with <b>Django</b>
-            </p>
-            <a href="https://github.com/Rajkaranm/spacehub" target="_blank" className={styles.btn}>
-              <i className="devicon-github-original"></i> Github
-            </a>
-          </div>
-        </div>
+        {projects.map((project, index) => (
+          <ProjectCard key={index} project={project} />
+        ))}
       </div>
     </>
   );
