@@ -24,11 +24,9 @@ export default function Projects() {
               with Tools page where user can view live price and live graph of
               the price of the coin.
             </p>
-            <button className={styles.btn}>
-              <a href="https://github.com/Rajkaranm/spacehub" target="_blank">
-                Github
-              </a>
-            </button>
+            <a href="https://github.com/Rajkaranm/spacehub" target="_blank" className={styles.btn}>
+              <i className="devicon-github-original"></i> Github
+            </a>
           </div>
         </div>
 
@@ -50,11 +48,9 @@ export default function Projects() {
               <b>Cart feature</b>, It is also integrated with <b>Razorpay's</b>{" "}
               payment gateway. Scrpyard was build with <b>MERN Stack</b>.
             </p>
-            <button className={styles.btn}>
-              <a href="https://github.com/rajkaranm/scrpyard" target="_blank">
-                Github
-              </a>
-            </button>
+            <a href="https://github.com/rajkaranm/scrpyard" target="_blank" className={styles.btn}>
+              <i className="devicon-github-original"></i> Github
+            </a>
           </div>
         </div>
 
@@ -75,14 +71,9 @@ export default function Projects() {
               channels and post interesting thing, It is build using power of <b>SvelteKit</b> and <b>PostgreSQL</b>.
 
             </p>
-            <button className={styles.btn}>
-              <a
-                href="https://github.com/rajkaranm/share_source"
-                target="_blank"
-              >
-                Github
-              </a>
-            </button>
+            <a href="https://github.com/rajkaranm/share_source" target="_blank" className={styles.btn}>
+              <i className="devicon-github-original"></i> Github
+            </a>
           </div>
         </div>
 
@@ -103,11 +94,9 @@ export default function Projects() {
               like NASA's Astronomy picture of the day and Various Other APIs.
               It is purely build with <b>Django</b>
             </p>
-            <button className={styles.btn}>
-              <a href="https://github.com/Rajkaranm/spacehub" target="_blank">
-                Github
-              </a>
-            </button>
+            <a href="https://github.com/Rajkaranm/spacehub" target="_blank" className={styles.btn}>
+              <i className="devicon-github-original"></i> Github
+            </a>
           </div>
         </div>
       </div>
