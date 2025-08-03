@@ -2,7 +2,6 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import Navbar from "@/components/Navbar/Navbar";
 import Divider from "@/components/Divider/Divider";
-import Skills from "@/components/Skills/Skills";
 import Footer from "@/components/Footer/Footer";
 import Link from "next/link";
 
@@ -37,8 +36,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <Divider />
-      <Skills />
       <Divider />
       <Footer />
     </main>
