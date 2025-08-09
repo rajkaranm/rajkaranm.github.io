@@ -1,7 +1,14 @@
 import Footer from "@/components/Footer/Footer";
 import Navbar from "@/components/Navbar/Navbar";
-import { getPostBySlug } from "@/lib/blog";
+import { getPostBySlug, getAllPosts } from "@/lib/blog";
 import Link from "next/link";
+
+export async function generateStaticParams() {
+  const posts = getAllPosts();
+  return posts.map((post) => ({
+    slug: post.slug,
+  }));
+}
 
 export default async function BlogPost({ params }) {
   const post = await getPostBySlug(params.slug);
