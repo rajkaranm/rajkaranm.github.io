@@ -1,35 +1,28 @@
 .nav {
-  width: 100vw;
-  height: 90px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--color-background);
+  border-bottom: 1px solid var(--color-secondary);
+  z-index: 10;
+  padding: 1rem 0;
+}
+
+.container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  padding: 0 3rem;
-  background-color: var(--background-color);
-}
-
-.nav_links {
-  margin-left: 2rem;
-}
-
-.logo {
-  text-decoration: none;
-  color: var(--text-color);
-  text-align: center;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 2rem;
 }
 
 .logo_name {
-  color: var(--primary-color);
-  transition: all 0.3s ease-in-out;
-}
-
-.logo_name:hover {
-  color: var(--text-color);
-}
-
-.logo p {
-  font-size: 0.9rem;
-  font-weight: 300;
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  color: var(--color-text);
 }
 
 .nav_links {
@@ -38,47 +31,43 @@
 }
 
 .nav_links a {
-  text-decoration: none;
-  font-size: 0.8rem;
-  color: var(--text-color);
-  transition: all 0.3s ease-in-out;
   margin: 0 1rem;
+  font-size: 1rem;
+  color: var(--color-text);
+  text-decoration: none;
+  position: relative;
 }
 
-.nav_links a:hover {
-  text-decoration: underline;
-  color: var(--primary-color);
+.nav_links a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: -4px;
+  left: 0;
+  background-color: var(--color-primary);
+  transition: width 0.3s;
+}
+
+.nav_links a:hover::after {
+  width: 100%;
 }
 
 .theme_toggle {
   background: none;
   border: none;
   cursor: pointer;
-  font-size: 1.2rem;
-  color: var(--text-color);
+  font-size: 1.5rem;
+  color: var(--color-text);
   margin-left: 1rem;
 }
 
-@media only screen and (max-width: 768px) {
-  .nav {
+@media (max-width: 768px) {
+  .container {
     flex-direction: column;
-    height: auto;
-    padding: 1rem;
   }
 
   .nav_links {
     margin-top: 1rem;
-    margin-left: 0;
-    flex-direction: row;
-    align-items: center;
-  }
-
-  .nav_links a {
-    margin: 0 0.5rem;
-  }
-
-  .theme_toggle {
-    margin-top: 0;
-    margin-left: 1rem;
   }
 }

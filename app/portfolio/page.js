@@ -10,13 +10,19 @@ export const metadata = {
     "Rajkaran Mishra is a programmer, hacker and writer. He writes about self-improvement.",
 };
 
+import Container from "@/components/Container/Container";
+
 export default function Portfolio() {
     return (
-        <div>
+        <>
             <Navbar />
-            <Projects />
-            <Divider />
+            <main>
+                <Container>
+                    <Projects />
+                    <Divider />
+                </Container>
+            </main>
             <Footer />
-        </div>
+        </>
     )
 }

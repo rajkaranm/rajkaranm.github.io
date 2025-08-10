@@ -38,8 +38,10 @@ function RootLayoutContent({ children }) {
         <meta property="og:site_name" content="Rajkaran Mishra" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@RealRajkaran" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
         <link
-          href="https://fonts.googleapis.com/css2?family=Long+Cang&family=Lora:wght@700&family=Roboto:wght@400;700&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Playfair+Display:wght@700&display=swap"
           rel="stylesheet"
         />
       </head>
