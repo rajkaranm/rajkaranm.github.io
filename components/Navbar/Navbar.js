@@ -12,7 +12,7 @@ export default function Navbar() {
       <Link href="/blog">blog</Link>
       <Link href="/portfolio">portfolio</Link>
       <button onClick={toggleTheme} className={styles.theme_toggle}>
-        [theme]
+        {theme === 'light' ? '[dark]' : '[light]'}
       </button>
     </nav>
   );

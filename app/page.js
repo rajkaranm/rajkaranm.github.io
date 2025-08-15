@@ -19,6 +19,12 @@ export default function Home() {
  \\__,_||_|\\__,_|\\__|_|\\___|_| |_|_|\\_\\
 `}
         </pre>
+        <div className={styles.intro}>
+            <h1 className={styles.name}>Rajkaran Mishra</h1>
+            <p className={styles.description}>
+                I build robust full stack application and protect them from getting hacked. Besides from my technical skill I love writing and blogging about technology and self improvement.
+            </p>
+        </div>
         <div className={styles.post_list}>
             <h2 className="heading">[ recent posts ]</h2>
             {posts.map((post) => (
