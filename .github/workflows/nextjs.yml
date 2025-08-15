@@ -3,7 +3,7 @@ name: Deploy Next.js site to GitHub Pages
 on:
   push:
     branches:
-      - main  # change if your default branch is not 'main'
+      - master  # deploy when pushing to master branch
 
 permissions:
   contents: read
@@ -24,13 +24,16 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: 20
 
       - name: Install dependencies
         run: npm ci
 
       - name: Build Next.js site
         run: npm run build
+
+      - name: Debug output folder
+        run: ls -R ./out  # show all files for verification
 
       - name: Upload static site to artifact
         uses: actions/upload-pages-artifact@v3
