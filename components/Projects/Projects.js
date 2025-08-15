@@ -3,40 +3,44 @@ import styles from "./Projects.module.css";
 
 const projects = [
   {
-    name: "#1 Crypton",
-    description: "Crypton is a blockchain application integrated with Meta Mask. Users can transfer ETH on the Ethereum blockchain and view live crypto prices.",
+    name: "Crypton",
+    description: "A blockchain application to transfer ETH and view live crypto prices.",
     image: "https://raw.githubusercontent.com/rajkaranm/crypton/main/img/crypton.png",
     github: "https://github.com/Rajkaranm/crypton",
+    tags: ["Blockchain", "React", "MetaMask"]
   },
   {
-    name: "#2 Scrpyard",
-    description: "Scrpyard is a MERN stack E-Commerce website with features to share projects, buy products, a cart, and Razorpay integration.",
+    name: "Scrpyard",
+    description: "A MERN stack E-Commerce website with project sharing and Razorpay.",
     image: "https://raw.githubusercontent.com/rajkaranm/scrpyard/main/img/scrpyard.png",
     github: "https://github.com/rajkaranm/scrpyard",
+    tags: ["MERN", "E-Commerce", "Node.js"]
   },
   {
-    name: "#3 Share Source",
-    description: "Share Source is a social media forum built with SvelteKit and PostgreSQL, allowing users to join channels and post content.",
+    name: "Share Source",
+    description: "A social media forum built with SvelteKit and PostgreSQL.",
     image: "https://raw.githubusercontent.com/rajkaranm/share_source/main/github-assests/share_source.png",
     github: "https://github.com/rajkaranm/share_source",
+    tags: ["SvelteKit", "PostgreSQL", "Social Media"]
   },
   {
-    name: "#4 Spacehub",
-    description: "Spacehub provides space information from various APIs like NASA's picture of the day. It is built with Django.",
+    name: "Spacehub",
+    description: "A Django app providing space information from various NASA APIs.",
     image: "https://raw.githubusercontent.com/Rajkaranm/spacehub/master/img/home.jpg",
     github: "https://github.com/Rajkaranm/spacehub",
+    tags: ["Django", "Python", "API"]
   },
 ];
 
 export default function Projects() {
   return (
-    <>
-      <h1 className="heading">PROJECTS</h1>
-      <div className={styles.project_container}>
+    <div>
+      <h1 className="heading">Projects</h1>
+      <div className={styles.project_grid}>
         {projects.map((project, index) => (
           <ProjectCard key={index} project={project} />
         ))}
       </div>
-    </>
+    </div>
   );
 }

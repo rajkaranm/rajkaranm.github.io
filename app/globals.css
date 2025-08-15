@@ -1,21 +1,16 @@
 :root {
-  --font-sans: 'Inter', sans-serif;
-  --font-serif: 'Playfair Display', serif;
+  --font-body: 'Inter', sans-serif;
+  --font-heading: 'Poppins', sans-serif;
 
-  --color-text: #111827; /* Dark Gray */
-  --color-background: #f9fafb; /* Off-white */
-  --color-primary: #3b82f6; /* Blue */
-  --color-secondary: #e5e7eb; /* Light Gray */
-  --color-accent: #10b981; /* Green */
+  --color-text: #cbd5e1; /* Light Slate */
+  --color-text-heading: #ffffff; /* White */
+  --color-background: #0f172a; /* Dark Slate */
+  --color-primary: #0284c7; /* Blue */
+  --color-secondary: #1e293b; /* Mid Slate */
+  --color-border: #334155; /* Darker Slate */
 }
 
-body[data-theme='dark'] {
-  --color-text: #f9fafb;
-  --color-background: #111827;
-  --color-primary: #60a5fa;
-  --color-secondary: #1f2937;
-  --color-accent: #34d399;
-}
+/* No dark theme needed for now, as the base theme is dark */
 
 * {
   box-sizing: border-box;
@@ -25,16 +20,17 @@ body[data-theme='dark'] {
 
 html,
 body {
-  line-height: 1.6;
-  font-family: var(--font-sans);
+  line-height: 1.7;
+  font-family: var(--font-body);
   background-color: var(--color-background);
   color: var(--color-text);
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-serif);
-  color: var(--color-text);
+  font-family: var(--font-heading);
+  color: var(--color-text-heading);
   margin-bottom: 1rem;
+  font-weight: 600;
 }
 
 a {
@@ -44,23 +40,11 @@ a {
 }
 
 a:hover {
-  color: var(--color-accent);
+  color: var(--color-text-heading);
 }
 
 .heading {
-  text-align: center;
-  margin: 0;
-  margin-top: 1rem;
-  font-size: 3rem;
-}
-
-.blog_reader {
-  margin: 0 25%;
-}
-
-
-@media only screen and (max-width:500px) {
-  .blog_reader {
-    margin: 0 1rem;
-  }
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: left;
 }

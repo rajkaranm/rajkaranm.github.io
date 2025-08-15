@@ -5,18 +5,12 @@ import 'aos/dist/aos.css'; // Import AOS styles globally
 import Aos from 'aos';
 import { useContext, useEffect } from "react";
 import { ThemeProvider } from "@/context/ThemeContext";
-import ThemeContext from "@/context/ThemeContext";
+import Sidebar from "@/components/Sidebar/Sidebar";
+import styles from './layout.module.css';
 
 const inter = Inter({ subsets: ["latin"] });
 
-function RootLayoutContent({ children }) {
-  const { theme } = useContext(ThemeContext);
-
-  useEffect(() => {
-    Aos.init({ duration: 1000 });
-    document.body.setAttribute('data-theme', theme);
-  }, [theme]);
-
+export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
@@ -29,7 +23,6 @@ function RootLayoutContent({ children }) {
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="canonical" href="https://rajkaran.blog" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
-        <meta property="og:type" content="website" />
         <meta
           property="og:title"
           content="Rajkaran Mishra - Programmer, Hacker, Writer."
@@ -41,19 +34,20 @@ function RootLayoutContent({ children }) {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
         <link
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Playfair+Display:wght@700&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@600;700&display=swap"
           rel="stylesheet"
         />
       </head>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <ThemeProvider>
+            <div className={styles.layout}>
+                <Sidebar />
+                <main className={styles.main_content}>
+                    {children}
+                </main>
+            </div>
+        </ThemeProvider>
+      </body>
     </html>
-  );
-}
-
-export default function RootLayout({ children }) {
-  return (
-    <ThemeProvider>
-      <RootLayoutContent>{children}</RootLayoutContent>
-    </ThemeProvider>
   );
 }

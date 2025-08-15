@@ -1,0 +1,21 @@
+.layout {
+  display: flex;
+}
+
+.main_content {
+  margin-left: 280px;
+  padding: 4rem;
+  width: calc(100% - 280px);
+}
+
+@media (max-width: 1024px) {
+  .layout {
+    flex-direction: column;
+  }
+
+  .main_content {
+    margin-left: 0;
+    width: 100%;
+    padding: 2rem;
+  }
+}
