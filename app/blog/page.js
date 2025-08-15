@@ -1,6 +1,7 @@
 import { getAllPosts } from "@/lib/blog";
 import Link from "next/link";
 import styles from "./Blog.module.css";
+import Navbar from "@/components/Navbar/Navbar";
 import Container from "@/components/Container/Container";
 
 export default function Blog() {
@@ -8,10 +9,8 @@ export default function Blog() {
 
   return (
     <Container>
-      <h1 className="heading">Blog</h1>
-      <p className={styles.description}>
-        I write about technology, programming, and whatever else is on my mind.
-      </p>
+      <Navbar />
+      <h1 className="heading">[ blog ]</h1>
       <div className={styles.post_list}>
         {posts.map((post) => (
           <Link key={post.slug} href={`/blog/${post.slug}`} className={styles.post_link}>

@@ -1,16 +1,12 @@
 :root {
-  --font-body: 'Inter', sans-serif;
-  --font-heading: 'Poppins', sans-serif;
+  --font-mono: 'Roboto Mono', monospace;
 
-  --color-text: #cbd5e1; /* Light Slate */
-  --color-text-heading: #ffffff; /* White */
-  --color-background: #0f172a; /* Dark Slate */
-  --color-primary: #0284c7; /* Blue */
-  --color-secondary: #1e293b; /* Mid Slate */
-  --color-border: #334155; /* Darker Slate */
+  --color-text: #e2e8f0; /* Light Gray */
+  --color-background: #0d1117; /* Very Dark Blue */
+  --color-primary: #33ff00; /* Bright Green */
+  --color-secondary: #161b22; /* Darker Blue */
+  --color-border: #30363d; /* Gray */
 }
-
-/* No dark theme needed for now, as the base theme is dark */
 
 * {
   box-sizing: border-box;
@@ -21,14 +17,14 @@
 html,
 body {
   line-height: 1.7;
-  font-family: var(--font-body);
+  font-family: var(--font-mono);
   background-color: var(--color-background);
   color: var(--color-text);
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-heading);
-  color: var(--color-text-heading);
+  font-family: var(--font-mono);
+  color: var(--color-text);
   margin-bottom: 1rem;
   font-weight: 600;
 }
@@ -36,15 +32,15 @@ h1, h2, h3, h4, h5, h6 {
 a {
   color: var(--color-primary);
   text-decoration: none;
-  transition: color 0.2s ease-in-out;
 }
 
 a:hover {
-  color: var(--color-text-heading);
+  text-decoration: underline;
 }
 
 .heading {
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin-bottom: 2rem;
   text-align: left;
+  color: var(--color-primary);
 }
