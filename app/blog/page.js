@@ -13,7 +13,7 @@ export default function Blog() {
       <h1 className="heading">[ blog ]</h1>
       <div className={styles.post_list}>
         {posts.map((post) => (
-          <Link key={post.slug} href={`/blog/${post.slug}.html`} className={styles.post_link}>
+          <Link key={post.slug} href={`/blog/${post.slug}`} className={styles.post_link}>
             <div className={styles.post_item}>
               <span className={styles.post_date}>{post.date}</span>
               <h2 className={styles.post_title}>{post.title}</h2>

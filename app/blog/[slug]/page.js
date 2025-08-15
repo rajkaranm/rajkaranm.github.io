@@ -6,7 +6,7 @@ import Container from "@/components/Container/Container";
 export async function generateStaticParams() {
   const posts = getAllPosts();
   return posts.map((post) => ({
-    slug: `${post.slug}.html`,
+    slug: `${post.slug}`,
   }));
 }
 
