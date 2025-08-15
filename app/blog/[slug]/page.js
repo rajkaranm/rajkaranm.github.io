@@ -2,6 +2,7 @@ import { getPostBySlug, getAllPosts } from "@/lib/blog";
 import Link from "next/link";
 import styles from "./Slug.module.css";
 import Container from "@/components/Container/Container";
+import Navbar from "@/components/Navbar/Navbar"
 
 export async function generateStaticParams() {
   const posts = getAllPosts();
@@ -14,7 +15,8 @@ export default async function BlogPost({ params }) {
   const post = await getPostBySlug(params.slug);
 
   return (
-    <Container>
+   <Container>
+	<Navbar />
         <article className={styles.article}>
         <header className={styles.header}>
             <h1 className={styles.title}>{post.title}</h1>
