@@ -4,18 +4,23 @@ import styles from "./ProjectCard.module.css";
 export default function ProjectCard({ project }) {
   return (
     <div className={styles.card}>
-      <Image
-        src={project.image}
-        alt={project.name}
-        width="450"
-        height="290"
-      />
-      <div className={styles.card_info}>
-        <h3>{project.name}</h3>
-        <p>{project.description}</p>
-        <a href={project.github} target="_blank" className={styles.btn}>
-          <i className="devicon-github-original"></i> Github
-        </a>
+      <a href={project.github} target="_blank" rel="noopener noreferrer">
+        <Image
+          src={project.image}
+          alt={project.name}
+          width={400}
+          height={250}
+          className={styles.image}
+        />
+      </a>
+      <div className={styles.content}>
+        <h3 className={styles.title}>{project.name}</h3>
+        <p className={styles.description}>{project.description}</p>
+        <div className={styles.tags}>
+          {project.tags.map((tag) => (
+            <span key={tag} className={styles.tag}>{tag}</span>
+          ))}
+        </div>
       </div>
     </div>
   );

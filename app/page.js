@@ -1,43 +1,42 @@
-import Image from "next/image";
-import styles from "./page.module.css";
-import Navbar from "@/components/Navbar/Navbar";
-import Divider from "@/components/Divider/Divider";
-import Footer from "@/components/Footer/Footer";
-import Link from "next/link";
+import Link from 'next/link';
+import styles from './page.module.css';
+import { getAllPosts } from '@/lib/blog';
+import Navbar from '@/components/Navbar/Navbar';
+import Container from '@/components/Container/Container';
 
 export default function Home() {
+    const posts = getAllPosts();
   return (
-    <main className={styles.main}>
-      <Navbar />
-      <div className={styles.landing}>
-        <div data-aos="fade-up" className={styles.about}>
-          <div >
-            <Image
-              className={styles.profile_img}
-              src="/profile.jpg"
-              width={200}
-              height={200}
-            />
-          </div>
-          <h1 className={styles.intro}>Hi, I'm Rajkaran</h1>
-          <p className={styles.desc}>
-            I build robust full stack application and protect them from getting hacked. Besides from my technical skill I love writing and blogging about technology and self improvement.
-          </p>
-          <div className={styles.buttons}>
-            <Link href="/blog" className={styles.btn}>View Blog</Link>
-            <Link href="/portfolio" className={styles.btn}>View Portfolio</Link>
-          </div>
-          <div className={styles.social_icons}>
-            <a href="#" target="_blank"><i className="devicon-youtube-plain"></i></a>
-            <a href="#" target="_blank"><i className="devicon-medium-plain"></i></a>
-            <a href="#" target="_blank"><i className="devicon-github-original"></i></a>
-            <a href="#" target="_blank"><i className="devicon-twitter-original"></i></a>
-            <a href="#" target="_blank"><i className="devicon-instagram-plain"></i></a>
-          </div>
+    <Container>
+        <Navbar />
+        <pre className={styles.ascii_art}>
+{`
+ _____         _      _
+|  __ \\       | |    | |
+| |__) |__ _ _| |__  | | __ ___  _ __
+|  _  // _\` | | '_ \\ | |/ // _ \\| '_ \\
+| | \\ \\ (_| | | |_) ||   <|  __/| | | |
+|_|  \\_\\__,_|_|_.__/ |_|\\_\\\\___||_| |_|
+
+`}
+        </pre>
+        <div className={styles.intro}>
+            <h1 className={styles.name}>Rajkaran Mishra</h1>
+            <p className={styles.description}>
+                I build robust full stack application and protect them from getting hacked. Besides from my technical skill I love writing and blogging about technology and self improvement.
+            </p>
         </div>
-      </div>
-      <Divider />
-      <Footer />
-    </main>
+        <div className={styles.post_list}>
+            <h2 className="heading">[ recent posts ]</h2>
+            {posts.map((post) => (
+            <Link key={post.slug} href={`/blog/${post.slug}`} className={styles.post_link}>
+                <div className={styles.post_item}>
+                <span className={styles.post_date}>{post.date}</span>
+                <h3 className={styles.post_title}>{post.title}</h3>
+                </div>
+            </Link>
+            ))}
+        </div>
+    </Container>
   );
 }

@@ -1,22 +1,6 @@
-'use client'
-import { Inter } from "next/font/google";
-import "./globals.css";
-import 'aos/dist/aos.css'; // Import AOS styles globally
-import Aos from 'aos';
-import { useContext, useEffect } from "react";
-import { ThemeProvider } from "@/context/ThemeContext";
-import ThemeContext from "@/context/ThemeContext";
+import './globals.css';
 
-const inter = Inter({ subsets: ["latin"] });
-
-function RootLayoutContent({ children }) {
-  const { theme } = useContext(ThemeContext);
-
-  useEffect(() => {
-    Aos.init({ duration: 1000 });
-    document.body.setAttribute('data-theme', theme);
-  }, [theme]);
-
+export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
@@ -29,7 +13,6 @@ function RootLayoutContent({ children }) {
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="canonical" href="https://rajkaran.blog" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
-        <meta property="og:type" content="website" />
         <meta
           property="og:title"
           content="Rajkaran Mishra - Programmer, Hacker, Writer."
@@ -38,20 +21,16 @@ function RootLayoutContent({ children }) {
         <meta property="og:site_name" content="Rajkaran Mishra" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@RealRajkaran" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
         <link
-          href="https://fonts.googleapis.com/css2?family=Long+Cang&family=Lora:wght@700&family=Roboto:wght@400;700&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap"
           rel="stylesheet"
         />
       </head>
-      <body className={inter.className}>{children}</body>
+      <body>
+        {children}
+      </body>
     </html>
-  );
-}
-
-export default function RootLayout({ children }) {
-  return (
-    <ThemeProvider>
-      <RootLayoutContent>{children}</RootLayoutContent>
-    </ThemeProvider>
   );
 }

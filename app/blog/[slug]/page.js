@@ -1,7 +1,7 @@
-import Footer from "@/components/Footer/Footer";
-import Navbar from "@/components/Navbar/Navbar";
 import { getPostBySlug, getAllPosts } from "@/lib/blog";
 import Link from "next/link";
+import styles from "./Slug.module.css";
+import Container from "@/components/Container/Container";
 
 export async function generateStaticParams() {
   const posts = getAllPosts();
@@ -14,18 +14,17 @@ export default async function BlogPost({ params }) {
   const post = await getPostBySlug(params.slug);
 
   return (
-    <div>
-      <Navbar />
-      <article className="blog_reader">
-        <h1>{post.title}</h1>
-        <p>{post.date}</p>
-        <div dangerouslySetInnerHTML={{ __html: post.contentHtml }} />
-        <div style={{ "marginTop": "3rem" }}>
-          <Link href="/blog">← Back to blog</Link>
+    <Container>
+        <article className={styles.article}>
+        <header className={styles.header}>
+            <h1 className={styles.title}>{post.title}</h1>
+            <p className={styles.date}>{post.date}</p>
+        </header>
+        <div className={styles.content} dangerouslySetInnerHTML={{ __html: post.contentHtml }} />
+        <div className={styles.back_link_container}>
+            <Link href="/blog" className={styles.back_link}>← Back to Blog</Link>
         </div>
-      </article>
-      <Footer />
-    </div>
+        </article>
+    </Container>
   );
 }
-
