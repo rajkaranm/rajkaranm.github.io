@@ -286,10 +286,14 @@ def build_post_row(post, section_url_prefix):
 def build_project_item(proj):
     """Build a project card item."""
     tags_html = "".join(f'<span class="project-tag">[{t}]</span> ' for t in proj.get("tags", []))
-    url = proj.get("url") or proj.get("github") or "#"
+    url = proj.get("url") or proj.get("github") or ""
+    if url and url != "#":
+        name_html = f'<a href="{url}" class="project-name" target="_blank" rel="noopener noreferrer">{proj["name"]}</a>'
+    else:
+        name_html = f'<span class="project-name">{proj["name"]}</span>'
     return f"""<div class="project-item">
   <div class="project-header">
-    <a href="{url}" class="project-name" target="_blank" rel="noopener noreferrer">{proj['name']}</a>
+    {name_html}
     <div class="project-tags">{tags_html.strip()}</div>
   </div>
   <p class="project-description">{proj['description']}</p>
@@ -408,8 +412,8 @@ def main():
 
     home_full = render_template(base_tmpl, {
         **common_ctx,
-        "title": "Rajkaran Mishra — Software Engineer & Writer",
-        "description": "Personal website, technical deep-dives, systems engineering, and essays on focus and software craft.",
+        "title": "Rajkaran Mishra — AI-Powered Systems Engineer & Writer",
+        "description": "Personal website, low-latency financial systems, enterprise automation, and engineering notes on focus and software craft.",
         "canonical_url": "https://rajkaran.blog/",
         "nav_home": "active",
         "content": home_content

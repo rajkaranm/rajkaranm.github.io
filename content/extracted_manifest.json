@@ -1,8 +1,8 @@
 {
   "author": {
     "name": "Rajkaran Mishra",
-    "title": "Programmer, Hacker, Writer",
-    "bio": "I build robust full-stack applications, explore systems and cybersecurity, and write about technology, learning, and self-improvement.",
+    "title": "AI-Powered Systems Engineer & Writer",
+    "bio": "I build and operate distributed, low-latency financial trading platforms, architect enterprise automation engines, and research practical cybersecurity.",
     "location": "India",
     "canonical": "https://rajkaran.blog",
     "github_pages": "https://rajkaranm.github.io",
@@ -11,7 +11,6 @@
       "twitter": "https://twitter.com/imrajkaran_",
       "linkedin": "https://www.linkedin.com/in/raj-karan/",
       "instagram": "https://www.instagram.com/imrajkaran_/",
-      "substack": "https://rajkaran.substack.com",
       "medium": "https://medium.com/@imrajkaran",
       "youtube": "https://www.youtube.com/@ItsRkEver",
       "email": "rajkaranvir456@gmail.com"
@@ -19,32 +18,16 @@
   },
   "projects": [
     {
-      "name": "Crypton",
-      "description": "A blockchain web application to transfer ETH and inspect live cryptocurrency market prices via MetaMask.",
-      "github": "https://github.com/Rajkaranm/crypton",
-      "url": "https://github.com/Rajkaranm/crypton",
-      "tags": ["Blockchain", "Ethereum", "React", "MetaMask"]
+      "name": "Low-Latency Algorithmic Trading Platform",
+      "description": "Architected and built a distributed, event-driven algorithmic trading engine from scratch. Features microsecond-level tick data ingestion, real-time LTP streaming over WebSockets, automated multi-broker order execution, and continuous position risk monitoring.",
+      "url": "",
+      "tags": ["Python", "FastAPI", "Redis", "RabbitMQ", "PostgreSQL", "WebSockets", "asyncio"]
     },
     {
-      "name": "Scrpyard",
-      "description": "A full-stack e-commerce marketplace platform featuring student project sharing and Razorpay payment integration.",
-      "github": "https://github.com/rajkaranm/scrpyard",
-      "url": "https://github.com/rajkaranm/scrpyard",
-      "tags": ["Node.js", "Express", "MongoDB", "React", "Razorpay"]
-    },
-    {
-      "name": "Share Source",
-      "description": "A fast social media discussion forum built with SvelteKit and PostgreSQL for collaborative developer discourse.",
-      "github": "https://github.com/rajkaranm/share_source",
-      "url": "https://github.com/rajkaranm/share_source",
-      "tags": ["SvelteKit", "PostgreSQL", "JavaScript"]
-    },
-    {
-      "name": "Spacehub",
-      "description": "An astronomy web application aggregating NASA Open APIs to present astronomical discoveries, imagery, and orbital data.",
-      "github": "https://github.com/Rajkaranm/spacehub",
-      "url": "https://github.com/Rajkaranm/spacehub",
-      "tags": ["Django", "Python", "NASA APIs"]
+      "name": "Enterprise MIS & Reporting Automation Engine",
+      "description": "Designed an automated financial data processing engine that eliminated manual spreadsheet reporting. Ingests raw multi-ledger data, reconciles complex stock and purchase schedules, and exports audit-ready financial registers in seconds.",
+      "url": "",
+      "tags": ["Python", "Pandas", "PostgreSQL", "FastAPI", "React", "ETL"]
     }
   ],
   "articles": {
