@@ -1,0 +1,21 @@
+<article>
+  <a href="{{back_url}}" class="post-back-link">&larr; Back to {{back_label}}</a>
+
+  <header class="post-header">
+    <div class="post-meta">
+      <time datetime="{{date_iso}}">{{date_formatted}}</time>
+      <span class="meta-sep">&middot;</span>
+      <span>{{reading_time}} min read</span>
+      <span class="meta-sep">&middot;</span>
+      <span>[{{category}}]</span>
+    </div>
+    <h1>{{post_title}}</h1>
+    {{#if_summary}}
+    <p class="post-summary">{{summary}}</p>
+    {{/if_summary}}
+  </header>
+
+  <div class="post-body">
+    {{article_content}}
+  </div>
+</article>

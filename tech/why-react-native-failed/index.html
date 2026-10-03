@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Why React Native Failed to Replace Native Development — Rajkaran Mishra</title>
+  <meta name="description" content="An engineering post-mortem on bridge serialization bottlenecks, thread synchronization overhead, and the realities of cross-platform mobile development.">
+  <link rel="canonical" href="https://rajkaran.blog/tech/why-react-native-failed/">
+  <link rel="icon" href="/assets/favicon.ico">
+  <link rel="alternate" type="application/rss+xml" title="Rajkaran Mishra — RSS Feed" href="/feed.xml">
+
+  <!-- Typography: Inter + JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/css/style.css">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Why React Native Failed to Replace Native Development — Rajkaran Mishra">
+  <meta property="og:description" content="An engineering post-mortem on bridge serialization bottlenecks, thread synchronization overhead, and the realities of cross-platform mobile development.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://rajkaran.blog/tech/why-react-native-failed/">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:creator" content="@imrajkaran_">
+</head>
+<body>
+  <header class="site-header">
+    <a href="/" class="site-title">Rajkaran Mishra</a>
+    <nav class="site-nav">
+      <a href="/" class="">Home</a>
+      <span class="nav-sep">·</span>
+      <a href="/tech/" class="active">Tech</a>
+      <span class="nav-sep">·</span>
+      <a href="/personal/" class="">Personal</a>
+      <span class="nav-sep">·</span>
+      <a href="/now/" class="">Now</a>
+      <span class="nav-sep">·</span>
+      <a href="https://github.com/rajkaranm" target="_blank" rel="noopener noreferrer">GitHub</a>
+    </nav>
+  </header>
+
+  <main>
+    <article>
+  <a href="/tech/" class="post-back-link">&larr; Back to /tech/</a>
+
+  <header class="post-header">
+    <div class="post-meta">
+      <time datetime="2024-03-10">Mar 10, 2024</time>
+      <span class="meta-sep">&middot;</span>
+      <span>3 min read</span>
+      <span class="meta-sep">&middot;</span>
+      <span>[Tech]</span>
+    </div>
+    <h1>Why React Native Failed to Replace Native Development</h1>
+    
+    <p class="post-summary">An engineering post-mortem on bridge serialization bottlenecks, thread synchronization overhead, and the realities of cross-platform mobile development.</p>
+    
+  </header>
+
+  <div class="post-body">
+    <p>When React Native first arrived, the promise was alluring: write your application once in idiomatic JavaScript or TypeScript, and compile to authentic native primitives across iOS and Android without sacrificing UI fidelity.</p>
+
+<p>A decade later, high-performance mobile engineering teams have repeatedly walked back total cross-platform rewrites. Understanding why requires stepping away from developer ergonomics and examining the runtime mechanics.</p>
+
+<h2>The Asynchronous Bridge Bottleneck</h2>
+
+<p>At the heart of legacy React Native architectures was the JSON bridge. The application was split into two worlds:</p>
+
+<ol><li><strong>The JavaScript VM:</strong> Executing application state machines, business logic, and component lifecycles.</li><li><strong>The Native Main/UI Thread:</strong> Handling touch events, gestures, layout measurement, and GPU dispatch.</li></ol>
+
+<p>Communication between these threads was mediated via asynchronous, serialized JSON messages over a batched queue.</p>
+
+<pre><code class="language-text">[ JavaScript Runtime ] &lt;== JSON Bridge Queue ==&gt; [ Native Host UI Thread ]
+       (Hermes/V8)         (Asynchronous/Batched)     (UIKit / Android Views)
+</code></pre>
+
+<p>In low-frequency interaction scenarios—such as displaying static forms or fetching read-only feeds—this latency was imperceptible. But the moment an interface required 60 FPS or 120 FPS continuous synchronization (pinch-to-zoom gestures, complex gesture-driven navigation transitions, or inertial scrolling lists containing deep view hierarchies), serialization congestion caused dropped frames.</p>
+
+<h2>Thread Synchronization and the JSI</h2>
+
+<p>Meta addressed bridge latency with the New Architecture, introducing the <strong>JavaScript Interface (JSI)</strong> and <strong>TurboModules</strong>, allowing JavaScript to hold direct C++ host object references:</p>
+
+<pre><code class="language-cpp">// Direct synchronous C++ host invocation bypassing serialization
+class HostObjectBinding : public jsi::HostObject {
+  jsi::Value get(jsi::Runtime&amp; rt, const jsi::PropNameID&amp; name) override {
+    return jsi::Function::createFromHostFunction(rt, name, 0,
+      [](jsi::Runtime&amp; rt, const jsi::Value&amp; thisVal, const jsi::Value* args, size_t count) {
+        return jsi::Value(computeDirectNativeTransform());
+      });
+  }
+};
+</code></pre>
+
+<p>While JSI eliminated JSON serialization overhead, it exposed a deeper structural truth: the impedance mismatch between platform primitives.</p>
+
+<h2>The Tooling and Dependency Abyss</h2>
+
+<p>The true operational cost of cross-platform mobile development is rarely runtime execution—it is lifecycle maintenance. A non-trivial React Native project is not simply a JavaScript app; it is: <em> An Xcode workspace managing CocoaPods and Swift/Objective-C frameworks. </em> A Gradle build system managing Android NDK, Kotlin, and ProGuard/R8 minification. * A Node/npm workspace running Metro bundler.</p>
+
+<p>When Apple or Google updates an underlying SDK, gesture recognizer API, or permission model, cross-platform wrappers inevitably lag behind. Debugging an intermittent memory leak or threading crash often requires diving into three distinct debuggers (Safari Web Inspector, Chrome DevTools, LLDB, and Android Studio Profiler).</p>
+
+<h2>The Verdict</h2>
+
+<p>React Native remains an exceptional platform for rapid prototyping, content-centric applications, and teams with strong web engineering departments. However, for applications where micro-interactions, gesture fluidity, and battery efficiency dictate user retention, native Swift and Kotlin remain the gold standard.</p>
+  </div>
+</article>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-links">
+      <a href="https://github.com/rajkaranm" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <span class="footer-sep">·</span>
+      <a href="https://twitter.com/imrajkaran_" target="_blank" rel="noopener noreferrer">X (Twitter)</a>
+      <span class="footer-sep">·</span>
+      <a href="https://www.linkedin.com/in/raj-karan/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <span class="footer-sep">·</span>
+      <a href="mailto:rajkaranvir456@gmail.com">Email</a>
+      <span class="footer-sep">·</span>
+      <a href="/feed.xml">RSS</a>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Rajkaran Mishra &middot; Crafted Minimal</span>
+      <a href="#top">↑ Top</a>
+    </div>
+  </footer>
+</body>
+</html>

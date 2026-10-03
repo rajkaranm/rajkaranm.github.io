@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rajkaran Mishra</title>
+    <link>https://rajkaran.blog/</link>
+    <description>Technical deep-dives, systems engineering, and essays on focus and software craft.</description>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 03 Oct 2026 05:21:28 GMT</lastBuildDate>
+    <atom:link href="https://rajkaran.blog/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>How Journaling Changes Your Life</title>
+      <link>https://rajkaran.blog/personal/how-journaling-changes-your-life/</link>
+      <guid isPermaLink="true">https://rajkaran.blog/personal/how-journaling-changes-your-life/</guid>
+      <pubDate>Wed, 26 Jun 2024 00:00:00 GMT</pubDate>
+      <description>Why externalizing thoughts and documenting ideas on paper clarifies mental models and decision making.</description>
+      <category>Personal</category>
+    </item>
+    <item>
+      <title>Notes on Focus and Intentional Solitude</title>
+      <link>https://rajkaran.blog/personal/notes-on-focus/</link>
+      <guid isPermaLink="true">https://rajkaran.blog/personal/notes-on-focus/</guid>
+      <pubDate>Thu, 18 Apr 2024 00:00:00 GMT</pubDate>
+      <description>Reflections on deep work, reducing digital noise, and carving out uninterrupted blocks of contemplation.</description>
+      <category>Personal</category>
+    </item>
+    <item>
+      <title>Why React Native Failed to Replace Native Development</title>
+      <link>https://rajkaran.blog/tech/why-react-native-failed/</link>
+      <guid isPermaLink="true">https://rajkaran.blog/tech/why-react-native-failed/</guid>
+      <pubDate>Sun, 10 Mar 2024 00:00:00 GMT</pubDate>
+      <description>An engineering post-mortem on bridge serialization bottlenecks, thread synchronization overhead, and the realities of cross-platform mobile development.</description>
+      <category>Tech</category>
+    </item>
+    <item>
+      <title>One Thing Stops You from Achieving Your Goals</title>
+      <link>https://rajkaran.blog/personal/one-thing-stops-you-from-achieving-your-goals/</link>
+      <guid isPermaLink="true">https://rajkaran.blog/personal/one-thing-stops-you-from-achieving-your-goals/</guid>
+      <pubDate>Fri, 02 Feb 2024 00:00:00 GMT</pubDate>
+      <description>Deconstructing unhelpful anticipatory anxieties that paralyze creators before starting new projects.</description>
+      <category>Personal</category>
+    </item>
+    <item>
+      <title>Unusual Advice to Stay Motivated All Time</title>
+      <link>https://rajkaran.blog/personal/unusual-advice-to-stay-motivated-all-time/</link>
+      <guid isPermaLink="true">https://rajkaran.blog/personal/unusual-advice-to-stay-motivated-all-time/</guid>
+      <pubDate>Fri, 19 Jan 2024 00:00:00 GMT</pubDate>
+      <description>How memento mori and the reality of finite time provide an urgent, grounded foundation for consistent action.</description>
+      <category>Personal</category>
+    </item>
+    <item>
+      <title>How to Read 24 to 36 Books a Year</title>
+      <link>https://rajkaran.blog/personal/how-to-read-24-to-36-books-a-year/</link>
+      <guid isPermaLink="true">https://rajkaran.blog/personal/how-to-read-24-to-36-books-a-year/</guid>
+      <pubDate>Fri, 12 Jan 2024 00:00:00 GMT</pubDate>
+      <description>Actionable reading habits and techniques for managing inner monologue to read more effectively.</description>
+      <category>Personal</category>
+    </item>
+    <item>
+      <title>Ultimate Guide for Productivity</title>
+      <link>https://rajkaran.blog/personal/ultimate-guide-for-productivity/</link>
+      <guid isPermaLink="true">https://rajkaran.blog/personal/ultimate-guide-for-productivity/</guid>
+      <pubDate>Fri, 05 Jan 2024 00:00:00 GMT</pubDate>
+      <description>A comprehensive breakdown of habits, focus preservation, and elimination of unproductive friction.</description>
+      <category>Personal</category>
+    </item>
+    <item>
+      <title>Why JavaScript Developers are Very Active</title>
+      <link>https://rajkaran.blog/tech/why-javascript-developers-are-so-busy/</link>
+      <guid isPermaLink="true">https://rajkaran.blog/tech/why-javascript-developers-are-so-busy/</guid>
+      <pubDate>Fri, 16 Jun 2023 00:00:00 GMT</pubDate>
+      <description>An analysis of the fast-paced JavaScript framework landscape and strategies for keeping your engineering skillset relevant.</description>
+      <category>Tech</category>
+    </item>
+    <item>
+      <title>How to Get Started with Programming</title>
+      <link>https://rajkaran.blog/tech/how-to-get-started-with-programming/</link>
+      <guid isPermaLink="true">https://rajkaran.blog/tech/how-to-get-started-with-programming/</guid>
+      <pubDate>Thu, 25 May 2023 00:00:00 GMT</pubDate>
+      <description>Realistic advice on beginning your software engineering journey without getting misled by cinematic expectations.</description>
+      <category>Tech</category>
+    </item>
+  </channel>
+</rss>

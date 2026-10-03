@@ -1,0 +1,98 @@
+{
+  "author": {
+    "name": "Rajkaran Mishra",
+    "title": "Programmer, Hacker, Writer",
+    "bio": "I build robust full-stack applications, explore systems and cybersecurity, and write about technology, learning, and self-improvement.",
+    "location": "India",
+    "canonical": "https://rajkaran.blog",
+    "github_pages": "https://rajkaranm.github.io",
+    "social": {
+      "github": "https://github.com/rajkaranm",
+      "twitter": "https://twitter.com/imrajkaran_",
+      "linkedin": "https://www.linkedin.com/in/raj-karan/",
+      "instagram": "https://www.instagram.com/imrajkaran_/",
+      "substack": "https://rajkaran.substack.com",
+      "medium": "https://medium.com/@imrajkaran",
+      "youtube": "https://www.youtube.com/@ItsRkEver",
+      "email": "rajkaranvir456@gmail.com"
+    }
+  },
+  "projects": [
+    {
+      "name": "Crypton",
+      "description": "A blockchain web application to transfer ETH and inspect live cryptocurrency market prices via MetaMask.",
+      "github": "https://github.com/Rajkaranm/crypton",
+      "url": "https://github.com/Rajkaranm/crypton",
+      "tags": ["Blockchain", "Ethereum", "React", "MetaMask"]
+    },
+    {
+      "name": "Scrpyard",
+      "description": "A full-stack e-commerce marketplace platform featuring student project sharing and Razorpay payment integration.",
+      "github": "https://github.com/rajkaranm/scrpyard",
+      "url": "https://github.com/rajkaranm/scrpyard",
+      "tags": ["Node.js", "Express", "MongoDB", "React", "Razorpay"]
+    },
+    {
+      "name": "Share Source",
+      "description": "A fast social media discussion forum built with SvelteKit and PostgreSQL for collaborative developer discourse.",
+      "github": "https://github.com/rajkaranm/share_source",
+      "url": "https://github.com/rajkaranm/share_source",
+      "tags": ["SvelteKit", "PostgreSQL", "JavaScript"]
+    },
+    {
+      "name": "Spacehub",
+      "description": "An astronomy web application aggregating NASA Open APIs to present astronomical discoveries, imagery, and orbital data.",
+      "github": "https://github.com/Rajkaranm/spacehub",
+      "url": "https://github.com/Rajkaranm/spacehub",
+      "tags": ["Django", "Python", "NASA APIs"]
+    }
+  ],
+  "articles": {
+    "tech": [
+      {
+        "slug": "how-to-get-started-with-programming",
+        "title": "How to Get Started with Programming",
+        "date": "2023-05-25",
+        "summary": "Realistic advice on beginning your software engineering journey without getting misled by cinematic expectations."
+      },
+      {
+        "slug": "why-javascript-developers-are-so-busy",
+        "title": "Why JavaScript Developers are Very Active",
+        "date": "2023-06-16",
+        "summary": "An analysis of the fast-paced JavaScript framework landscape and strategies for keeping your engineering skillset relevant."
+      }
+    ],
+    "personal": [
+      {
+        "slug": "how-journaling-changes-your-life",
+        "title": "How Journaling Changes Your Life",
+        "date": "2024-06-26",
+        "summary": "Why externalizing thoughts and documenting ideas on paper clarifies mental models and decision making."
+      },
+      {
+        "slug": "one-thing-stops-you-from-achieving-your-goals",
+        "title": "One Thing Stops You from Achieving Your Goals",
+        "date": "2024-02-02",
+        "summary": "Deconstructing unhelpful anticipatory anxieties that paralyze creators before starting new projects."
+      },
+      {
+        "slug": "unusual-advice-to-stay-motivated-all-time",
+        "title": "Unusual Advice to Stay Motivated All Time",
+        "date": "2024-01-19",
+        "summary": "How memento mori and the reality of finite time provide an urgent, grounded foundation for consistent action."
+      },
+      {
+        "slug": "how-to-read-24-to-36-books-a-year",
+        "title": "How to Read 24 to 36 Books a Year",
+        "date": "2024-01-12",
+        "summary": "Actionable reading habits and techniques for managing inner monologue to read more effectively."
+      },
+      {
+        "slug": "ultimate-guide-for-productivity",
+        "title": "Ultimate Guide for Productivity",
+        "date": "2024-01-05",
+        "summary": "A comprehensive breakdown of habits, focus preservation, and elimination of unproductive friction."
+      }
+    ]
+  }
+}

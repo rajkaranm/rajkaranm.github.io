@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Crypton",
+    "description": "A blockchain web application to transfer ETH and inspect live cryptocurrency market prices via MetaMask.",
+    "github": "https://github.com/Rajkaranm/crypton",
+    "url": "https://github.com/Rajkaranm/crypton",
+    "tags": ["Blockchain", "Ethereum", "React", "MetaMask"]
+  },
+  {
+    "name": "Scrpyard",
+    "description": "A full-stack e-commerce marketplace platform featuring student project sharing and Razorpay payment integration.",
+    "github": "https://github.com/rajkaranm/scrpyard",
+    "url": "https://github.com/rajkaranm/scrpyard",
+    "tags": ["Node.js", "Express", "MongoDB", "React", "Razorpay"]
+  },
+  {
+    "name": "Share Source",
+    "description": "A fast social media discussion forum built with SvelteKit and PostgreSQL for collaborative developer discourse.",
+    "github": "https://github.com/rajkaranm/share_source",
+    "url": "https://github.com/rajkaranm/share_source",
+    "tags": ["SvelteKit", "PostgreSQL", "JavaScript"]
+  },
+  {
+    "name": "Spacehub",
+    "description": "An astronomy web application aggregating NASA Open APIs to present astronomical discoveries, imagery, and orbital data.",
+    "github": "https://github.com/Rajkaranm/spacehub",
+    "url": "https://github.com/Rajkaranm/spacehub",
+    "tags": ["Django", "Python", "NASA APIs"]
+  }
+]
