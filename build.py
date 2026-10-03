@@ -17,6 +17,10 @@ TEMPLATES_DIR = ROOT_DIR / "templates"
 CSS_DIR = ROOT_DIR / "css"
 ASSETS_DIR = ROOT_DIR / "assets"
 
+# Site root URL for canonical tags, OpenGraph, and RSS feed
+# Default to GitHub Pages URL; update whenever you configure a new custom domain
+SITE_URL = "https://rajkaranm.github.io"
+
 def parse_frontmatter(raw_text):
     """Parse YAML-style frontmatter from markdown content."""
     meta = {}
@@ -305,7 +309,7 @@ def generate_rss_feed(tech_posts, personal_posts, output_path):
     for p in tech_posts:
         all_posts.append({
             "title": p["title"],
-            "link": f"https://rajkaran.blog/tech/{p['slug']}/",
+            "link": f"{SITE_URL}/tech/{p['slug']}/",
             "pub_date": format_rfc822_date(p["date_iso"]),
             "date_iso": p["date_iso"],
             "summary": p["summary"] or p["title"],
@@ -314,7 +318,7 @@ def generate_rss_feed(tech_posts, personal_posts, output_path):
     for p in personal_posts:
         all_posts.append({
             "title": p["title"],
-            "link": f"https://rajkaran.blog/personal/{p['slug']}/",
+            "link": f"{SITE_URL}/personal/{p['slug']}/",
             "pub_date": format_rfc822_date(p["date_iso"]),
             "date_iso": p["date_iso"],
             "summary": p["summary"] or p["title"],
@@ -341,11 +345,11 @@ def generate_rss_feed(tech_posts, personal_posts, output_path):
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Rajkaran Mishra</title>
-    <link>https://rajkaran.blog/</link>
+    <link>{SITE_URL}/</link>
     <description>Technical deep-dives, systems engineering, and essays on focus and software craft.</description>
     <language>en-us</language>
     <lastBuildDate>{now_utc}</lastBuildDate>
-    <atom:link href="https://rajkaran.blog/feed.xml" rel="self" type="application/rss+xml"/>
+    <atom:link href="{SITE_URL}/feed.xml" rel="self" type="application/rss+xml"/>
 {items_block}
   </channel>
 </rss>
@@ -395,7 +399,7 @@ def main():
         "nav_tech": "",
         "nav_personal": "",
         "nav_now": "",
-        "canonical_url": "https://rajkaran.blog/",
+        "canonical_url": f"{SITE_URL}/",
         "og_type": "website",
     }
 
@@ -414,7 +418,7 @@ def main():
         **common_ctx,
         "title": "Rajkaran Mishra — AI-Powered Systems Engineer & Writer",
         "description": "Personal website, low-latency financial systems, enterprise automation, and engineering notes on focus and software craft.",
-        "canonical_url": "https://rajkaran.blog/",
+        "canonical_url": f"{SITE_URL}/",
         "nav_home": "active",
         "content": home_content
     })
@@ -432,7 +436,7 @@ def main():
         **common_ctx,
         "title": "Technical Writing — Rajkaran Mishra",
         "description": "Technical essays and engineering notes on systems, architecture, and software design.",
-        "canonical_url": "https://rajkaran.blog/tech/",
+        "canonical_url": f"{SITE_URL}/tech/",
         "nav_tech": "active",
         "content": tech_archive_content
     })
@@ -457,7 +461,7 @@ def main():
             **common_ctx,
             "title": f"{post['title']} — Rajkaran Mishra",
             "description": post["summary"] or f"Read {post['title']} by Rajkaran Mishra.",
-            "canonical_url": f"https://rajkaran.blog/tech/{post['slug']}/",
+            "canonical_url": f"{SITE_URL}/tech/{post['slug']}/",
             "og_type": "article",
             "nav_tech": "active",
             "content": post_content
@@ -476,7 +480,7 @@ def main():
         **common_ctx,
         "title": "Personal Essays — Rajkaran Mishra",
         "description": "Essays and reflections on productivity, reading, journaling, and intentional focus.",
-        "canonical_url": "https://rajkaran.blog/personal/",
+        "canonical_url": f"{SITE_URL}/personal/",
         "nav_personal": "active",
         "content": personal_archive_content
     })
@@ -501,7 +505,7 @@ def main():
             **common_ctx,
             "title": f"{post['title']} — Rajkaran Mishra",
             "description": post["summary"] or f"Read {post['title']} by Rajkaran Mishra.",
-            "canonical_url": f"https://rajkaran.blog/personal/{post['slug']}/",
+            "canonical_url": f"{SITE_URL}/personal/{post['slug']}/",
             "og_type": "article",
             "nav_personal": "active",
             "content": post_content
@@ -523,7 +527,7 @@ def main():
         **common_ctx,
         "title": "Now — Rajkaran Mishra",
         "description": "What I'm currently working on, reading, and exploring.",
-        "canonical_url": "https://rajkaran.blog/now/",
+        "canonical_url": f"{SITE_URL}/now/",
         "nav_now": "active",
         "content": now_content
     })

@@ -75,3 +75,9 @@ Visit:
 ## Deployment
 
 Pushes to the `master` branch trigger [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml), which automatically executes `python3 build.py` and publishes the static directory root directly to GitHub Pages.
+
+---
+
+## Architecture & Operations Guide
+
+For complete details on compiler mechanics, design tokens, step-by-step update workflows, and AI coding assistant rules, see [`context.md`](context.md).
