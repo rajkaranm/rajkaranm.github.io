@@ -239,7 +239,8 @@ img {
   font-size: 0.85rem;
   color: var(--text-muted);
   font-variant-numeric: tabular-nums;
-  width: 105px;
+  width: 125px;
+  white-space: nowrap;
   flex-shrink: 0;
 }
 
@@ -438,6 +439,7 @@ footer.site-footer {
   .post-date {
     width: auto;
     font-size: 0.8rem;
+    white-space: nowrap;
   }
   .project-header {
     flex-direction: column;
